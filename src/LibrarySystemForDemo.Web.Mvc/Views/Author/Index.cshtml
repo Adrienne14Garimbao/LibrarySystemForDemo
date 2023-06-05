@@ -1,0 +1,104 @@
+﻿@*
+    For Authors > Index
+*@
+
+@using LibrarySystemForDemo.Web.Models.Authors
+@using LibrarySystemForDemo.Web.Startup
+
+
+@model AuthorsListViewModel
+
+@{
+    ViewBag.Title = L("Author");
+    ViewBag.CurrentPageName = PageNames.Authors;
+}
+@section scripts
+    {
+    <environment names="Development">
+        <script src="~/view-resources/Views/Author/Index.js" asp-append-version="true"></script>
+    </environment>
+}
+<section class="content-header">
+    <div class="container-fluid">
+
+
+        <h1>@L("Author")</h1>
+
+        <a class="btn bg-blue float-sm-right" asp-controller="Author" asp-action="CreateOrEdit">
+            <i class="fa fa-plus-square"></i>
+            @L("Create")
+        </a>
+
+        <div class="col-sm-6">
+
+            <form id="authorSearchForm" class="form-horizontal" asp-controller="Author" asp-action="Index">
+
+                <div class="input-group">
+                    <div class="input-group-prepend">
+
+                        <button type="submit" class="btn btn-success btn-search search-author">
+                            <i class="fas fa-search"></i> @L("Search")
+                        </button>
+
+                    </div>
+                    <input type="text" name="searchAuthor" class="form-control txt-search">
+
+                </div>
+            </form>
+
+        </div>
+
+
+
+    </div>
+</section>
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="AuthorTable" class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>@L("AuthorsId")</th>
+                                        <th>@L("Author")</th>
+                                        <th style="width: 150px">@L("Actions")</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    @foreach (var author in Model.Authors)
+                                    {
+                                        <tr>
+                                            <td>@author?.Id</td>
+                                            <td>@author?.AuthorsName</td>
+
+                                            <td>
+
+                                                <button type="button" class="btn btn-sn bg-secondary edit-author" data-author-id="@author.Id">
+                                                    <i class="fas fa-pencil-alt"></i> Edit
+                                                </button>
+
+                                                <button type="button" class="btn btn-sn btn-danger delete-author" data-author-id="@author.Id" data-author-name="@author.AuthorsName">
+                                                    <i class="fas fa-trash"></i> Delete
+                                                </button>
+
+
+                                            </td>
+
+                                        </tr>
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
