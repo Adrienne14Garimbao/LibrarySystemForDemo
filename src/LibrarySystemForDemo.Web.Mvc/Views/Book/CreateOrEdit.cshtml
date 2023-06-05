@@ -1,0 +1,81 @@
+﻿@*
+    For Books > Create Or Edit
+*@
+
+@using LibrarySystemForDemo.Web.Models.Books;
+
+@model CreateOrEditBookViewModel;
+
+
+@section scripts
+    {
+    <environment names="Development">
+        <script src="~/view-resources/Views/Book/CreateOrEdit.js" asp-append-version="true"></script>
+    </environment>
+}
+
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <form name="BooksForm" role="form" class="form-horizontal">
+
+                            <input type="hidden" name="Id" value="@Model?.Id" />
+
+                            <div class="row">
+
+                                <div class="form-group">
+
+                                    <label for="BookTitle">Book Title</label>
+                                    <input type="text" class="form-control" id="BookTitle" name="BookTitle" value="@Model?.BookTitle" required placeholder="Enter Book Title">
+
+                                    <label for="authorList">Authors List</label>
+                                    @Html.DropDownListFor(
+                                    x => x.AuthorId,
+                                    Model.AuthorList.Select(
+                                    d => new SelectListItem {
+                                    Value = d.Id.ToString(),
+                                    Text = d.AuthorsName
+                                    }), "Select Author", new {@class = "form-control"})
+
+
+                                    <label for="BookPublisher">Publisher</label>
+                                    <input type="text" class="form-control" id="BookPublisher" name="BookPublisher" value="@Model?.BookPublisher" required placeholder="Enter Publisher Name">
+
+
+                                    <label for="departmentList">Category List</label>
+                                    @Html.DropDownListFor(
+                                    x => x.BookCategoryId,
+                                    Model.CategoryList.Select(
+                                    d => new SelectListItem {
+                                    Value = d.Id.ToString(),
+                                    Text = d.CategoryName
+                                    }), "Select Category", new {@class = "form-control"})
+
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <button type="button" class="btn btn-default cancel-button">@L("Cancel")</button>
+                                <button type="submit" class="btn btn-primary save-button">@L("Save")</button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+

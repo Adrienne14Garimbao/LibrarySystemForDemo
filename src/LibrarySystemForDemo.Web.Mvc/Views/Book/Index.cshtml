@@ -1,0 +1,115 @@
+﻿@*
+    For Books > Index
+*@
+
+@using LibrarySystemForDemo.Web.Models.Books
+@using LibrarySystemForDemo.Web.Startup
+
+@model BooksListViewModel;
+
+
+@{
+    ViewBag.Title = L("Books");
+    ViewBag.CurrentPageName = PageNames.Books;
+}
+
+@section scripts
+    {
+    <environment names="Development">
+        <script src="~/view-resources/Views/Book/Index.js" true"></script>
+    </environment>
+}
+<section class="content-header">
+
+    <div class="container-fluid">
+
+        <h1>@L("Books")</h1>
+
+        <a class="btn bg-blue float-sm-right" asp-controller="Book" asp-action="CreateOrEdit">
+            <i class="fas fa-book-medical"></i>
+            @L("Create")
+        </a>
+
+        <div class="col-sm-6">
+
+            <form id="bookSearchForm" class="form-horizontal" asp-controller="Book" asp-action="Index" method="get">
+
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <button type="submit" class="btn btn-success btn-search">
+                            <i class="fas fa-search"></i> @L("Search")
+                        </button>
+
+                    </div>
+                    <input type="text" name="searchBooks" class="form-control txt-search">
+
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="BookTable" class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>@L("BookId")</th>
+                                        <th>@L("BookTitle")</th>
+                                        <th>@L("BookAuthor")</th>
+                                        <th>@L("BookPublisher")</th>
+                                        <th>@L("Category")</th>
+
+
+                                        <th style="width: 150px">@L("Actions")</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+
+                                    @foreach (var books in Model.Books)
+                                    {
+                                        <tr>
+                                            <td>@books?.Id</td>
+                                            <td>@books?.BookTitle</td>
+                                            <td>@books.Author?.AuthorsName</td>
+                                            <td>@books?.BookPublisher</td>
+                                            <td>@books.BookCategory?.CategoryName</td>
+
+
+
+                                            <td>
+                                                <button type="button" class="btn btn-sn bg-secondary edit-book" data-book-id="@books.Id">
+                                                    <i class="fas fa-pencil-alt"></i> Edit
+                                                </button>
+
+                                                <button type="button" class="btn btn-sn btn-danger delete-book" data-book-id="@books.Id" data-book-name="@books.BookTitle">
+                                                    <i class="fas fa-trash"></i> Delete
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    }
+
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
