@@ -148,6 +148,9 @@
     <text name="AuthorsName">Authors Name</text>
     <text name="Author">Authors</text>
 
+
+    <text name="Borrower">Borrower</text>
+    <text name="BorrowerID">Borrowers ID</text>
     <text name="IsBorrowed">Status</text>
     <text name="BorrowDate">Date Borrowed</text>
     <text name="ExpectedReturnDate">Expected Date of Return</text>
