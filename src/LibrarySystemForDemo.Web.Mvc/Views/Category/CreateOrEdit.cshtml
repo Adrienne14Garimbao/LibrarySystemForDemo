@@ -1,0 +1,65 @@
+﻿@*
+    For Category > Create or Edit
+*@
+
+@using LibrarySystemForDemo.Web.Models.Categories;
+
+@model CreateOrEditCategoryViewModel;
+
+
+@section scripts
+    {
+    <environment names="Development">
+        <script src="~/view-resources/Views/Category/CreateOrEdit.js" asp-append-version="true"></script>
+    </environment>
+}
+
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <form name="CategoryForm" role="form" class="form-horizontal">
+
+                            <input type="hidden" name="Id" value="@Model?.Id" />
+
+                            <div class="row">
+
+                                <div class="form-group">
+
+                                    <label for="categoryName">Category</label>
+                                    <input type="text" class="form-control" id="categoryName" name="CategoryName" value="@Model?.CategoryName" required placeholder="Enter Category Name">
+
+
+                                    <label for="departmentList">Department List</label>
+                                    @Html.DropDownListFor(
+                                    x => x.DepartmentId,
+                                    Model.DepartmentList.Select(
+                                    d => new SelectListItem {                   /*d means Department Dto */
+                                    Value = d.Id.ToString(),
+                                    Text = d.Name
+                                    }), "Select Department", new {@class = "form-control"})
+
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <button type="button" class="btn btn-default cancel-button">@L("Cancel")</button>
+                                <button type="submit" class="btn btn-primary save-button">@L("Save")</button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

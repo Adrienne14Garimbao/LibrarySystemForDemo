@@ -60,7 +60,7 @@ namespace LibrarySystemForDemo.Web.Startup
                     new MenuItemDefinition(
                         PageNames.BookCategories,
                         L("BookCategories"),
-                        url: "Categories",
+                        url: "Category",
                         icon: "fas fa-list-alt",
                         requiresAuthentication: true
                     )
