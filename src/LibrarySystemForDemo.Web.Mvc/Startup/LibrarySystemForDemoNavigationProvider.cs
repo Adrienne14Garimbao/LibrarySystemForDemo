@@ -29,7 +29,70 @@ namespace LibrarySystemForDemo.Web.Startup
                         icon: "fas fa-home",
                         requiresAuthentication: true
                     )
-                ).AddItem(
+                )
+
+                /*   Departments   */
+                .AddItem(
+                    new MenuItemDefinition(
+                        PageNames.Departments,
+                        L("Departments"),
+                        url: "Department",
+                        icon: "fas fa-sitemap",
+                        requiresAuthentication: true
+                    )
+                )
+                /*   Departments   */
+
+                /*   Students   */
+                .AddItem(
+                    new MenuItemDefinition(
+                        PageNames.Students,
+                        L("Students"),
+                        url: "Student",
+                        icon: "fas fa-graduation-cap",
+                        requiresAuthentication: true
+                    )
+                )
+                /*   Students   */
+
+                /*   Book Category   */
+                .AddItem(
+                    new MenuItemDefinition(
+                        PageNames.BookCategories,
+                        L("BookCategories"),
+                        url: "Categories",
+                        icon: "fas fa-list-alt",
+                        requiresAuthentication: true
+                    )
+                )
+                /*   Book Category   */
+
+                /*      Authors        */
+                .AddItem(
+                    new MenuItemDefinition(
+                        PageNames.Authors,
+                        L("Author"),
+                        url: "Author",
+                        icon: "fas fa-pencil-alt",
+                        requiresAuthentication: true
+                    )
+                )
+                /*      Authors       */
+
+                /*      Books        */
+                .AddItem(
+                    new MenuItemDefinition(
+                        PageNames.Books,
+                        L("Books"),
+                        url: "Book",
+                        icon: "fas fa-book",
+                        requiresAuthentication: true
+                    )
+                )
+                /*      Books       */
+
+
+                .AddItem(
                     new MenuItemDefinition(
                         PageNames.Tenants,
                         L("Tenants"),

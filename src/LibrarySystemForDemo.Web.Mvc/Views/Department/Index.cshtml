@@ -1,0 +1,102 @@
+﻿@*
+    For Department > Index
+*@
+@using LibrarySystemForDemo.Web.Models.Departments
+@using LibrarySystemForDemo.Web.Startup
+
+
+@model DepartmentListViewModel
+@{
+    ViewBag.Title = L("Departments");
+    ViewBag.CurrentPageName = PageNames.Departments;
+}
+@section scripts
+    {
+    <environment names="Development">
+        <script src="~/view-resources/Views/Department/Index.js" asp-append-version="true"></script>
+    </environment>
+}
+<section class="content-header">
+    <div class="container-fluid">
+
+
+        <h1>@L("Departments")</h1>
+
+        <a class="btn bg-blue float-sm-right" asp-controller="Department" asp-action="CreateOrEdit">
+            <i class="fa fa-plus-square"></i>
+            @L("Create")
+        </a>
+
+        <div class="col-sm-6">
+
+            <form id="departmentSearchForm" class="form-horizontal">
+
+                <div class="input-group">
+                    <div class="input-group-prepend">
+
+                        <button type="submit" class="btn btn-success btn-search">
+                            <i class="fas fa-search"></i> @L("Search")
+                        </button>
+
+                    </div>
+                    <input type="text" name="searchDepartments" class="form-control txt-search">
+
+                </div>
+            </form>
+
+        </div>
+
+
+
+    </div>
+</section>
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="DepartmentsTable" class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>@L("DepartmentId")</th>
+                                        <th>@L("DepartmentName")</th>
+                                        <th style="width: 150px">@L("Actions")</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    @foreach (var department in Model.Departments)
+                                    {
+                                        <tr>
+                                            <td>@department?.Id</td>
+                                            <td>@department?.Name</td>
+
+                                            <td>
+
+                                                <button type="button" class="btn btn-sn bg-secondary edit-department" data-department-id="@department.Id">
+                                                    <i class="fas fa-pencil-alt"></i> Edit
+                                                </button>
+
+                                                <button type="button" class="btn btn-sn btn-danger delete-department" data-department-id="@department.Id" data-department-name="@department.Name">
+                                                    <i class="fas fa-trash"></i> Delete
+                                                </button>
+
+
+                                            </td>
+
+                                        </tr>
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
