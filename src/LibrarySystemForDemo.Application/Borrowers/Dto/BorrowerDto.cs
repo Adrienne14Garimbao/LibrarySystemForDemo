@@ -1,4 +1,5 @@
-﻿using Abp.AutoMapper;
+﻿using Abp.Application.Services.Dto;
+using Abp.AutoMapper;
 using LibrarySystemForDemo.Books.Dto;
 using LibrarySystemForDemo.Entities;
 using LibrarySystemForDemo.Students.Dto;
@@ -13,7 +14,7 @@ namespace LibrarySystemForDemo.Borrowers.Dto
 
     [AutoMapFrom(typeof(Borrower))]
     [AutoMapTo(typeof(Borrower))]
-    public class BorrowerDto
+    public class BorrowerDto : EntityDto<int>
     {
         public DateTime BorrowDate { get; set; }
 
