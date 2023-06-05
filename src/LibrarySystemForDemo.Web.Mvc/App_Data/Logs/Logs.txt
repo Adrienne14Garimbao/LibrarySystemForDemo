@@ -4625,3 +4625,1089 @@ ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
 DEBUG 2023-06-05 11:16:13,282 [35   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: wb08w894eAws-6DAduFGug
 INFO  2023-06-05 11:16:13,286 [35   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
 INFO  2023-06-05 11:16:13,289 [35   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=wb08w894eAws-6DAduFGug - - - 101 - - 7794.2267ms
+DEBUG 2023-06-05 11:28:28,493 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2023-06-05 11:28:28,653 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2023-06-05 11:28:28,684 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibrarySystemForDemo.Web.Startup.LibrarySystemForDemoWebMvcModule, LibrarySystemForDemo.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-05 11:28:28,687 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibrarySystemForDemo.LibrarySystemForDemoWebCoreModule, LibrarySystemForDemo.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-05 11:28:28,688 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibrarySystemForDemo.LibrarySystemForDemoApplicationModule, LibrarySystemForDemo.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-05 11:28:28,689 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibrarySystemForDemo.LibrarySystemForDemoCoreModule, LibrarySystemForDemo.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-05 11:28:28,689 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-05 11:28:28,690 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-05 11:28:28,691 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-05 11:28:28,691 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-05 11:28:28,693 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibrarySystemForDemo.EntityFrameworkCore.LibrarySystemForDemoEntityFrameworkModule, LibrarySystemForDemo.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-05 11:28:28,693 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-05 11:28:28,694 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-05 11:28:28,694 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-05 11:28:28,695 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-05 11:28:28,696 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-05 11:28:28,697 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-05 11:28:28,700 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2023-06-05 11:28:28,853 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-05 11:28:28,853 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-05 11:28:28,853 [1    ] o.Configuration.LanguageManagementConfig - Converted LibrarySystemForDemo (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-05 11:28:28,853 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-05 11:28:29,841 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: LibrarySystemForDemo.EntityFrameworkCore.LibrarySystemForDemoDbContext, LibrarySystemForDemo.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-05 11:28:30,415 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2023-06-05 11:28:30,490 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2023-06-05 11:28:30,507 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2023-06-05 11:28:30,519 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: LibrarySystemForDemo
+DEBUG 2023-06-05 11:28:30,526 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2023-06-05 11:28:30,540 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2023-06-05 11:28:30,550 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[LibrarySystemForDemo.MultiTenancy.Tenant, LibrarySystemForDemo.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[LibrarySystemForDemo.Authorization.Users.User, LibrarySystemForDemo.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2023-06-05 11:28:30,595 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 20 classes define auto mapping attributes
+DEBUG 2023-06-05 11:28:30,595 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2023-06-05 11:28:30,603 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.Users.Dto.CreateUserDto
+DEBUG 2023-06-05 11:28:30,604 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.Users.Dto.UserDto
+DEBUG 2023-06-05 11:28:30,604 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.Students.Dto.CreateStudentDto
+DEBUG 2023-06-05 11:28:30,605 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.Students.Dto.StudentDto
+DEBUG 2023-06-05 11:28:30,605 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2023-06-05 11:28:30,605 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.Sessions.Dto.UserLoginInfoDto
+DEBUG 2023-06-05 11:28:30,605 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.Roles.Dto.PermissionDto
+DEBUG 2023-06-05 11:28:30,606 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2023-06-05 11:28:30,606 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.MultiTenancy.Dto.TenantDto
+DEBUG 2023-06-05 11:28:30,606 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.Departments.Dto.CreateDepartmentDto
+DEBUG 2023-06-05 11:28:30,606 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.Departments.Dto.DepartmentDto
+DEBUG 2023-06-05 11:28:30,607 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.Categories.Dto.CategoryDto
+DEBUG 2023-06-05 11:28:30,607 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.Categories.Dto.CreateCategoryDto
+DEBUG 2023-06-05 11:28:30,607 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.Books.Dto.BookDto
+DEBUG 2023-06-05 11:28:30,607 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.Books.Dto.CreateBookDto
+DEBUG 2023-06-05 11:28:30,607 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.Authors.Dto.AuthorDto
+DEBUG 2023-06-05 11:28:30,607 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.Authors.Dto.CreateAuthorDto
+DEBUG 2023-06-05 11:28:30,607 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2023-06-05 11:28:30,608 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibrarySystemForDemo.Web.Models.Roles.EditRoleModalViewModel
+INFO  2023-06-05 11:28:34,146 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (75ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[DisplayName], [a].[IsDeleted], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name]
+FROM [AbpEditions] AS [a]
+WHERE [a].[Name] = N'Standard'
+INFO  2023-06-05 11:28:34,352 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (51ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE ([a].[TenantId] IS NULL) AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2023-06-05 11:28:34,392 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (13ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE ([a].[TenantId] IS NULL) AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2023-06-05 11:28:34,406 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE ([a].[TenantId] IS NULL) AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2023-06-05 11:28:34,410 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE ([a].[TenantId] IS NULL) AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2023-06-05 11:28:34,418 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE ([a].[TenantId] IS NULL) AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2023-06-05 11:28:34,429 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE ([a].[TenantId] IS NULL) AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2023-06-05 11:28:34,436 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE ([a].[TenantId] IS NULL) AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2023-06-05 11:28:34,442 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE ([a].[TenantId] IS NULL) AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2023-06-05 11:28:34,454 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE ([a].[TenantId] IS NULL) AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2023-06-05 11:28:34,466 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE ([a].[TenantId] IS NULL) AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2023-06-05 11:28:34,473 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE ([a].[TenantId] IS NULL) AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2023-06-05 11:28:34,479 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE ([a].[TenantId] IS NULL) AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2023-06-05 11:28:34,487 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE ([a].[TenantId] IS NULL) AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2023-06-05 11:28:34,515 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[Description], [a].[DisplayName], [a].[IsDefault], [a].[IsDeleted], [a].[IsStatic], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[NormalizedName], [a].[TenantId]
+FROM [AbpRoles] AS [a]
+WHERE ([a].[TenantId] IS NULL) AND [a].[Name] = N'Admin'
+INFO  2023-06-05 11:28:34,670 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (15ms) [Parameters=[@__adminRoleForHost_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [AbpPermissions] AS [a]
+WHERE [a].[Discriminator] = N'RolePermissionSetting' AND ([a].[TenantId] IS NULL) AND [a].[RoleId] = @__adminRoleForHost_Id_0
+INFO  2023-06-05 11:28:34,706 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE ([a].[TenantId] IS NULL) AND [a].[UserName] = N'admin'
+INFO  2023-06-05 11:28:34,916 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__name_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpSettings] AS [a]
+        WHERE [a].[Name] = @__name_0 AND ([a].[TenantId] IS NULL) AND ([a].[UserId] IS NULL)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2023-06-05 11:28:34,924 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__name_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpSettings] AS [a]
+        WHERE [a].[Name] = @__name_0 AND ([a].[TenantId] IS NULL) AND ([a].[UserId] IS NULL)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2023-06-05 11:28:34,927 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpSettings] AS [a]
+        WHERE [a].[Name] = @__name_0 AND ([a].[TenantId] IS NULL) AND ([a].[UserId] IS NULL)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2023-06-05 11:28:35,030 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConnectionString], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EditionId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[TenancyName]
+FROM [AbpTenants] AS [a]
+WHERE [a].[TenancyName] = N'Default'
+INFO  2023-06-05 11:28:35,103 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@___tenantId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[Description], [a].[DisplayName], [a].[IsDefault], [a].[IsDeleted], [a].[IsStatic], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[NormalizedName], [a].[TenantId]
+FROM [AbpRoles] AS [a]
+WHERE [a].[TenantId] = @___tenantId_0 AND [a].[Name] = N'Admin'
+INFO  2023-06-05 11:28:35,126 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@___tenantId_0='?' (DbType = Int32), @__adminRole_Id_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [AbpPermissions] AS [a]
+WHERE [a].[Discriminator] = N'RolePermissionSetting' AND [a].[TenantId] = @___tenantId_0 AND [a].[RoleId] = @__adminRole_Id_1
+INFO  2023-06-05 11:28:35,149 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@___tenantId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE [a].[TenantId] = @___tenantId_0 AND [a].[UserName] = N'admin'
+INFO  2023-06-05 11:28:35,309 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[DisplayName], [a].[Icon], [a].[IsDeleted], [a].[IsDisabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[TenantId]
+FROM [AbpLanguages] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL))
+INFO  2023-06-05 11:28:35,525 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[TenantId], [a].[UserId], [a].[Value]
+FROM [AbpSettings] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND ([a].[UserId] IS NULL) AND ([a].[TenantId] IS NULL)
+INFO  2023-06-05 11:28:35,598 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,fa,ja,zh-Hans
+INFO  2023-06-05 11:28:35,690 [9    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (30ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:28:36,715 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2023-06-05 11:28:36,718 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2023-06-05 11:28:36,721 [1    ] Microsoft.Hosting.Lifetime               - Content root path: C:\Users\Adrienne.Garimbao\Desktop\MVC Training Project by Adrienne\aspnet-core\src\LibrarySystemForDemo.Web.Mvc
+INFO  2023-06-05 11:28:36,762 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/ - -
+INFO  2023-06-05 11:28:37,040 [8    ] uthorization.DefaultAuthorizationService - Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+INFO  2023-06-05 11:28:37,057 [8    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2023-06-05 11:28:37,098 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/ - - - 302 - - 337.3834ms
+INFO  2023-06-05 11:28:37,113 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Account/Login?ReturnUrl=%2F - -
+INFO  2023-06-05 11:28:37,130 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LibrarySystemForDemo.Web.Controllers.AccountController.Login (LibrarySystemForDemo.Web.Mvc)'
+INFO  2023-06-05 11:28:37,207 [6    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(System.String, System.String, System.String) on controller LibrarySystemForDemo.Web.Controllers.AccountController (LibrarySystemForDemo.Web.Mvc).
+INFO  2023-06-05 11:28:39,993 [4    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (50ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INFO  2023-06-05 11:28:40,726 [9    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:28:45,870 [9    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (41ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:28:49,004 [4    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+INFO  2023-06-05 11:28:49,174 [4    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[Key], [a].[LanguageName], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Source], [a].[TenantId], [a].[Value]
+FROM [AbpLanguageTexts] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[Source] = @___sourceName_0 AND [a].[LanguageName] = @__CultureInfo_Name_1
+INFO  2023-06-05 11:28:50,945 [8    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:28:53,362 [20   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 13200.2846ms.
+INFO  2023-06-05 11:28:53,376 [20   ] c.Infrastructure.ControllerActionInvoker - Executed action LibrarySystemForDemo.Web.Controllers.AccountController.Login (LibrarySystemForDemo.Web.Mvc) in 16161.4398ms
+INFO  2023-06-05 11:28:53,380 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LibrarySystemForDemo.Web.Controllers.AccountController.Login (LibrarySystemForDemo.Web.Mvc)'
+INFO  2023-06-05 11:28:53,473 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 16340.9859ms
+INFO  2023-06-05 11:28:53,518 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/admin-lte/dist/css/adminlte.min.css?v=FQ-k0mIFfWXVTaW1arh3qKx8IXX5Bm5f6QG-0pkUjaE - -
+INFO  2023-06-05 11:28:53,521 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.min.css?v=D9O-28vCF-qJh2qZSFIXxXc30hTED8RmnKeZRyvVEpA - -
+INFO  2023-06-05 11:28:53,537 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/css/style.css?v=xKbbeRspeJ53pjKRA3Bh5ZJLItu8Y58wlf6cER1IiIk - -
+INFO  2023-06-05 11:28:53,540 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/icheck-bootstrap/icheck-bootstrap.css?v=nGN1DgpDTrAS3DS7E5J0cL-gblWBKAMSoU_LSuY8gu8 - -
+INFO  2023-06-05 11:28:53,558 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.min.css was not modified
+INFO  2023-06-05 11:28:53,559 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/style.css was not modified
+INFO  2023-06-05 11:28:53,563 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/icheck-bootstrap/icheck-bootstrap.css was not modified
+INFO  2023-06-05 11:28:53,565 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/admin-lte/dist/css/adminlte.min.css was not modified
+INFO  2023-06-05 11:28:53,569 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/icheck-bootstrap/icheck-bootstrap.css?v=nGN1DgpDTrAS3DS7E5J0cL-gblWBKAMSoU_LSuY8gu8 - - - 304 - text/css 29.2523ms
+INFO  2023-06-05 11:28:53,579 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/css/style.css?v=xKbbeRspeJ53pjKRA3Bh5ZJLItu8Y58wlf6cER1IiIk - - - 304 - text/css 45.5198ms
+INFO  2023-06-05 11:28:53,586 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Account/_Layout.css?v=pk1udUQR7bqKUWFxSnrnIl0MM8MH2Wu05p-zpysBQWI - -
+INFO  2023-06-05 11:28:53,600 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/admin-lte/dist/css/adminlte.min.css?v=FQ-k0mIFfWXVTaW1arh3qKx8IXX5Bm5f6QG-0pkUjaE - - - 304 - text/css 59.2435ms
+INFO  2023-06-05 11:28:53,605 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/jquery/jquery.js?v=WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU - -
+INFO  2023-06-05 11:28:53,607 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Account/_Layout.css was not modified
+INFO  2023-06-05 11:28:53,610 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/toastr/toastr.css?v=He3QEBKoL_nMXlVsoM7S2C2kjFQqS5L-mgA-F8LpG-U - -
+INFO  2023-06-05 11:28:53,613 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/jquery/jquery.js was not modified
+INFO  2023-06-05 11:28:53,619 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Account/_Layout.css?v=pk1udUQR7bqKUWFxSnrnIl0MM8MH2Wu05p-zpysBQWI - - - 304 - text/css 38.9423ms
+INFO  2023-06-05 11:28:53,622 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/jquery/jquery.js?v=WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU - - - 304 - text/javascript 27.7262ms
+INFO  2023-06-05 11:28:53,627 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/toastr/toastr.css was not modified
+INFO  2023-06-05 11:28:53,629 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/admin-lte/dist/js/adminlte.js?v=u48IADL1yBFYTA8PqnxogL0B9HfOVI3frq0ow7V5r_M - -
+INFO  2023-06-05 11:28:53,640 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/bootstrap/dist/js/bootstrap.bundle.js?v=Qesn0fIyfJA0VfGtzm0Kga5Ro9eCzokdNoMPke7bSxE - -
+INFO  2023-06-05 11:28:53,644 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/toastr/toastr.css?v=He3QEBKoL_nMXlVsoM7S2C2kjFQqS5L-mgA-F8LpG-U - - - 304 - text/css 31.2043ms
+INFO  2023-06-05 11:28:53,654 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.min.css?v=D9O-28vCF-qJh2qZSFIXxXc30hTED8RmnKeZRyvVEpA - - - 304 - text/css 57.0051ms
+INFO  2023-06-05 11:28:53,721 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/admin-lte/dist/js/adminlte.js was not modified
+INFO  2023-06-05 11:28:53,757 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/bootstrap/dist/js/bootstrap.bundle.js was not modified
+INFO  2023-06-05 11:28:53,763 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/block-ui/jquery.blockUI.js?v=oQaw-JJuUcJQ9QVYMcFnPxICDT-hv8-kuxT2FNzTGhc - -
+INFO  2023-06-05 11:28:53,790 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/spin/spin.js?v=GySbz3oZXNlwoawo5PpYy0iM38B-q3jyi_HLw00uxy0 - -
+INFO  2023-06-05 11:28:53,817 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/admin-lte/dist/js/adminlte.js?v=u48IADL1yBFYTA8PqnxogL0B9HfOVI3frq0ow7V5r_M - - - 304 - text/javascript 141.1458ms
+INFO  2023-06-05 11:28:53,826 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/bootstrap/dist/js/bootstrap.bundle.js?v=Qesn0fIyfJA0VfGtzm0Kga5Ro9eCzokdNoMPke7bSxE - - - 304 - text/javascript 168.7629ms
+INFO  2023-06-05 11:28:53,831 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/block-ui/jquery.blockUI.js was not modified
+INFO  2023-06-05 11:28:53,848 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/toastr/toastr.min.js?v=yNbKY1y6h2rbVcQtf0b8lq4a-xpktyFc3pSYoGAY1qQ - -
+INFO  2023-06-05 11:28:53,851 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/sweetalert/sweetalert.min.js?v=KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms - -
+INFO  2023-06-05 11:28:53,854 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/block-ui/jquery.blockUI.js?v=oQaw-JJuUcJQ9QVYMcFnPxICDT-hv8-kuxT2FNzTGhc - - - 304 - text/javascript 192.8821ms
+INFO  2023-06-05 11:28:53,857 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/sweetalert/sweetalert.min.js was not modified
+INFO  2023-06-05 11:28:53,860 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/toastr/toastr.min.js was not modified
+INFO  2023-06-05 11:28:53,872 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/moment/moment-with-locales.js?v=dgFbqbQVzjkZPQxWd8PBtzGiRBhChc4I2wO_q_s-Xeo - -
+INFO  2023-06-05 11:28:53,874 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/toastr/toastr.min.js?v=yNbKY1y6h2rbVcQtf0b8lq4a-xpktyFc3pSYoGAY1qQ - - - 304 - text/javascript 42.2376ms
+INFO  2023-06-05 11:28:53,877 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/sweetalert/sweetalert.min.js?v=KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms - - - 304 - text/javascript 30.4054ms
+INFO  2023-06-05 11:28:53,880 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/abp.js?v=3lLIPNQoGBxv9DWxtKwnvHr7Wlov-D0jo-NtjAdTenA - -
+INFO  2023-06-05 11:28:53,887 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs-ext/spin/jquery.spin.js?v=EG38bUU5b2M64hy9cNAzu_cQBEsiBYsDifOcoHqNd2k - -
+INFO  2023-06-05 11:28:53,890 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/abp-web-resources/Abp/Framework/scripts/abp.js was not modified
+INFO  2023-06-05 11:28:53,893 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/moment/moment-with-locales.js was not modified
+INFO  2023-06-05 11:28:53,902 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/spin/spin.js was not modified
+INFO  2023-06-05 11:28:53,916 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/abp.js?v=3lLIPNQoGBxv9DWxtKwnvHr7Wlov-D0jo-NtjAdTenA - - - 304 - text/javascript 17.1424ms
+INFO  2023-06-05 11:28:53,919 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs-ext/spin/jquery.spin.js was not modified
+INFO  2023-06-05 11:28:53,925 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/moment/moment-with-locales.js?v=dgFbqbQVzjkZPQxWd8PBtzGiRBhChc4I2wO_q_s-Xeo - - - 304 - text/javascript 37.7638ms
+INFO  2023-06-05 11:28:53,930 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/font-awesome/css/all.min.css?v=2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y - -
+INFO  2023-06-05 11:28:53,932 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs-ext/spin/jquery.spin.js?v=EG38bUU5b2M64hy9cNAzu_cQBEsiBYsDifOcoHqNd2k - - - 304 - text/javascript 42.1016ms
+INFO  2023-06-05 11:28:53,938 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638215613105515403 - -
+INFO  2023-06-05 11:28:53,941 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638215613105515403 - -
+INFO  2023-06-05 11:28:53,944 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/font-awesome/css/all.min.css was not modified
+INFO  2023-06-05 11:28:53,950 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/spin/spin.js?v=GySbz3oZXNlwoawo5PpYy0iM38B-q3jyi_HLw00uxy0 - - - 304 - text/javascript 244.6210ms
+INFO  2023-06-05 11:28:53,955 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/font-awesome/css/all.min.css?v=2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y - - - 304 - text/css 25.1031ms
+INFO  2023-06-05 11:28:53,961 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-06-05 11:28:53,971 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Shared/Components/TenantChange/Default.js?v=638215613331289578 - -
+INFO  2023-06-05 11:28:53,976 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-06-05 11:28:53,989 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - -
+INFO  2023-06-05 11:28:54,016 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - - 200 12026 application/javascript;+charset=utf-8 43.8424ms
+INFO  2023-06-05 11:28:54,039 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js?v=i3fsIGh0z3DXDbSa7f6TwsWonuZ8-OwELSrtH1jHbDA - -
+INFO  2023-06-05 11:28:54,079 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js was not modified
+INFO  2023-06-05 11:28:54,103 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js?v=i3fsIGh0z3DXDbSa7f6TwsWonuZ8-OwELSrtH1jHbDA - - - 304 - text/javascript 63.2674ms
+INFO  2023-06-05 11:28:54,112 [9    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2023-06-05 11:28:54,130 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=vMuHbqHh635SKL2RG2qsGGCDyHg1yFeGqhPKpS34g4k - -
+INFO  2023-06-05 11:28:54,151 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js was not modified
+INFO  2023-06-05 11:28:54,161 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=vMuHbqHh635SKL2RG2qsGGCDyHg1yFeGqhPKpS34g4k - - - 304 - text/javascript 46.6416ms
+INFO  2023-06-05 11:28:54,171 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/jquery-validate/jquery.validate.js?v=xLhce0FUawd11QSwrvXSwST0oHhOolNoH9cUXAcsIAg - -
+INFO  2023-06-05 11:28:54,178 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/jquery-validate/jquery.validate.js was not modified
+INFO  2023-06-05 11:28:54,189 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/jquery-validate/jquery.validate.js?v=xLhce0FUawd11QSwrvXSwST0oHhOolNoH9cUXAcsIAg - - - 304 - text/javascript 16.6858ms
+INFO  2023-06-05 11:28:54,200 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/jquery-validate/jquery.validate.unobtrusive.js?v=XNNC8ESw29iopRLukVRazlP44TxnjGmEQanHJ5kHmtk - -
+INFO  2023-06-05 11:28:54,212 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/Components/TenantChange/Default.js'. Physical path: 'C:\Users\Adrienne.Garimbao\Desktop\MVC Training Project by Adrienne\aspnet-core\src\LibrarySystemForDemo.Web.Mvc\wwwroot\view-resources\Views\Shared\Components\TenantChange\Default.js'
+INFO  2023-06-05 11:28:54,218 [6    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2023-06-05 11:28:54,226 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/jquery-validate/jquery.validate.unobtrusive.js was not modified
+INFO  2023-06-05 11:28:54,232 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/jquery-validate/jquery.validate.unobtrusive.js?v=XNNC8ESw29iopRLukVRazlP44TxnjGmEQanHJ5kHmtk - - - 304 - text/javascript 36.8357ms
+INFO  2023-06-05 11:28:54,241 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Shared/Components/TenantChange/Default.js?v=638215613331289578 - - - 200 483 text/javascript 270.2990ms
+INFO  2023-06-05 11:28:54,246 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Account/Login.js?v=KxhHl3HYb-UQucT7TN2ewhzzgV_WwxRaGwGaSiT8xzM - -
+INFO  2023-06-05 11:28:54,267 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js?v=Ta7OYgm62iNXMvVrH3f4y3WqUbGsHGBNvt0Zu0eIKtk - -
+INFO  2023-06-05 11:28:54,364 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Account/Login.js was not modified
+INFO  2023-06-05 11:28:54,418 [9    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (115ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[Key], [a].[LanguageName], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Source], [a].[TenantId], [a].[Value]
+FROM [AbpLanguageTexts] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[Source] = @___sourceName_0 AND [a].[LanguageName] = @__CultureInfo_Name_1
+INFO  2023-06-05 11:28:54,449 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Account/Login.js?v=KxhHl3HYb-UQucT7TN2ewhzzgV_WwxRaGwGaSiT8xzM - - - 304 - text/javascript 138.6629ms
+INFO  2023-06-05 11:28:54,479 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js was not modified
+INFO  2023-06-05 11:28:54,490 [9    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (12ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[Key], [a].[LanguageName], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Source], [a].[TenantId], [a].[Value]
+FROM [AbpLanguageTexts] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[Source] = @___sourceName_0 AND [a].[LanguageName] = @__CultureInfo_Name_1
+INFO  2023-06-05 11:28:54,504 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/js/main.js?v=oclR1vehNTwc9ZUmoKJ_0BqLDmYlcIM2fw3BGopSaJ8 - -
+INFO  2023-06-05 11:28:54,526 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js?v=Ta7OYgm62iNXMvVrH3f4y3WqUbGsHGBNvt0Zu0eIKtk - - - 304 - text/javascript 262.1356ms
+INFO  2023-06-05 11:28:54,547 [9    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[Key], [a].[LanguageName], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Source], [a].[TenantId], [a].[Value]
+FROM [AbpLanguageTexts] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[Source] = @___sourceName_0 AND [a].[LanguageName] = @__CultureInfo_Name_1
+INFO  2023-06-05 11:28:54,575 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /js/main.js was not modified
+INFO  2023-06-05 11:28:54,600 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js?v=djoKib6ssm5DDzbXLe5pD7ayfFg3siaoEk-BFYzQlvI - -
+INFO  2023-06-05 11:28:54,605 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/js/main.js?v=oclR1vehNTwc9ZUmoKJ_0BqLDmYlcIM2fw3BGopSaJ8 - - - 304 - text/javascript 130.8215ms
+INFO  2023-06-05 11:28:54,618 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js was not modified
+INFO  2023-06-05 11:28:54,642 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js?v=MEOC0fqxBbFCeeJ6VHFuw8-2C710gCRqjbvYcHoBdHU - -
+INFO  2023-06-05 11:28:54,679 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js?v=djoKib6ssm5DDzbXLe5pD7ayfFg3siaoEk-BFYzQlvI - - - 304 - text/javascript 89.5140ms
+INFO  2023-06-05 11:28:54,691 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js was not modified
+INFO  2023-06-05 11:28:54,719 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.png - -
+INFO  2023-06-05 11:28:54,751 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js?v=MEOC0fqxBbFCeeJ6VHFuw8-2C710gCRqjbvYcHoBdHU - - - 304 - text/javascript 88.7085ms
+INFO  2023-06-05 11:28:54,778 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.png was not modified
+INFO  2023-06-05 11:28:54,818 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.png - - - 304 - image/png 86.7522ms
+INFO  2023-06-05 11:28:54,823 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/font-awesome/webfonts/fa-solid-900.woff2 - -
+INFO  2023-06-05 11:28:54,833 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/font-awesome/webfonts/fa-solid-900.woff2 was not modified
+INFO  2023-06-05 11:28:54,849 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/font-awesome/webfonts/fa-solid-900.woff2 - - - 304 - font/woff2 55.8696ms
+INFO  2023-06-05 11:28:54,860 [9    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2023-06-05 11:28:54,863 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - -
+INFO  2023-06-05 11:28:54,875 [9    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 754.4809ms
+INFO  2023-06-05 11:28:54,881 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-06-05 11:28:54,907 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638215613105515403 - - - 200 22298 application/x-javascript;+charset=utf-8 959.1346ms
+INFO  2023-06-05 11:28:55,096 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 190.3964ms
+INFO  2023-06-05 11:28:55,189 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2023-06-05 11:28:55,202 [6    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 974.8747ms
+INFO  2023-06-05 11:28:55,212 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-06-05 11:28:55,231 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638215613105515403 - - - 200 20586 application/x-javascript 1280.5107ms
+INFO  2023-06-05 11:28:56,014 [6    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:28:58,919 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/Account/Login application/x-www-form-urlencoded 256
+INFO  2023-06-05 11:28:58,941 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LibrarySystemForDemo.Web.Controllers.AccountController.Login (LibrarySystemForDemo.Web.Mvc)'
+INFO  2023-06-05 11:28:58,995 [6    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] Login(LibrarySystemForDemo.Web.Models.Account.LoginViewModel, System.String, System.String) on controller LibrarySystemForDemo.Web.Controllers.AccountController (LibrarySystemForDemo.Web.Mvc).
+INFO  2023-06-05 11:28:59,306 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__normalizedUserNameOrEmailAddress_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND ([a].[NormalizedUserName] = @__normalizedUserNameOrEmailAddress_0 OR [a].[NormalizedEmailAddress] = @__normalizedUserNameOrEmailAddress_0)
+INFO  2023-06-05 11:28:59,508 [8    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[CreationTime], [a].[CreatorUserId], [a].[TenantId], [a].[UserId]
+FROM [AbpUserClaims] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[UserId] = @__p_0
+INFO  2023-06-05 11:28:59,632 [8    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[@__ef_filter__p_2='?' (DbType = Boolean), @__ef_filter__p_3='?' (DbType = Boolean), @__ef_filter__p_0='?' (DbType = Boolean), @__user_Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Name]
+FROM [AbpUserRoles] AS [a]
+INNER JOIN (
+    SELECT [a0].[Id], [a0].[Name]
+    FROM [AbpRoles] AS [a0]
+    WHERE (@__ef_filter__p_2 = CAST(1 AS bit) OR [a0].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_3 = CAST(1 AS bit) OR ([a0].[TenantId] IS NULL))
+) AS [t] ON [a].[RoleId] = [t].[Id]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[UserId] = @__user_Id_0
+INFO  2023-06-05 11:28:59,706 [6    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (16ms) [Parameters=[@__ef_filter__p_3='?' (DbType = Boolean), @__ef_filter__p_4='?' (DbType = Boolean), @__ef_filter__p_6='?' (DbType = Boolean), @__ef_filter__p_7='?' (DbType = Boolean), @__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__user_Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Name]
+FROM [AbpUserOrganizationUnits] AS [a]
+INNER JOIN (
+    SELECT [a0].[OrganizationUnitId], [a0].[RoleId]
+    FROM [AbpOrganizationUnitRoles] AS [a0]
+    WHERE (@__ef_filter__p_3 = CAST(1 AS bit) OR [a0].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_4 = CAST(1 AS bit) OR ([a0].[TenantId] IS NULL))
+) AS [t] ON [a].[OrganizationUnitId] = [t].[OrganizationUnitId]
+INNER JOIN (
+    SELECT [a1].[Id], [a1].[Name]
+    FROM [AbpRoles] AS [a1]
+    WHERE (@__ef_filter__p_6 = CAST(1 AS bit) OR [a1].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_7 = CAST(1 AS bit) OR ([a1].[TenantId] IS NULL))
+) AS [t0] ON [t].[RoleId] = [t0].[Id]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[UserId] = @__user_Id_0
+INFO  2023-06-05 11:28:59,753 [4    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__normalizedName_0='?' (Size = 32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[Description], [a].[DisplayName], [a].[IsDefault], [a].[IsDeleted], [a].[IsStatic], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[NormalizedName], [a].[TenantId]
+FROM [AbpRoles] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[NormalizedName] = @__normalizedName_0
+INFO  2023-06-05 11:28:59,868 [4    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (62ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[CreationTime], [a].[CreatorUserId], [a].[RoleId], [a].[TenantId]
+FROM [AbpRoleClaims] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[RoleId] = @__p_0
+INFO  2023-06-05 11:28:59,945 [4    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (DbType = DateTime2), @p4='?' (Size = 1) (DbType = Byte), @p5='?' (Size = 64), @p6='?' (DbType = Int32), @p7='?' (DbType = Int64), @p8='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpUserLoginAttempts] ([BrowserInfo], [ClientIpAddress], [ClientName], [CreationTime], [Result], [TenancyName], [TenantId], [UserId], [UserNameOrEmailAddress])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+INFO  2023-06-05 11:28:59,964 [4    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application signed in.
+INFO  2023-06-05 11:28:59,977 [4    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INFO  2023-06-05 11:28:59,990 [4    ] tonsoftJson.NewtonsoftJsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2023-06-05 11:29:00,010 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action LibrarySystemForDemo.Web.Controllers.AccountController.Login (LibrarySystemForDemo.Web.Mvc) in 1004.2985ms
+INFO  2023-06-05 11:29:00,018 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LibrarySystemForDemo.Web.Controllers.AccountController.Login (LibrarySystemForDemo.Web.Mvc)'
+INFO  2023-06-05 11:29:00,043 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/Account/Login application/x-www-form-urlencoded 256 - 200 - application/json;+charset=utf-8 1104.2002ms
+INFO  2023-06-05 11:29:00,066 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/ - -
+INFO  2023-06-05 11:29:00,100 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LibrarySystemForDemo.Web.Controllers.HomeController.Index (LibrarySystemForDemo.Web.Mvc)'
+INFO  2023-06-05 11:29:00,108 [9    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LibrarySystemForDemo.Web.Controllers.HomeController (LibrarySystemForDemo.Web.Mvc).
+INFO  2023-06-05 11:29:00,145 [25   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INFO  2023-06-05 11:29:00,458 [25   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2023-06-05 11:29:01,057 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:29:01,639 [25   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (49ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[Id] = @__p_0
+INFO  2023-06-05 11:29:02,328 [25   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[Id] = @__p_0
+INFO  2023-06-05 11:29:02,539 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[Id] = @__p_0
+INFO  2023-06-05 11:29:02,553 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__ef_filter__p_2='?' (DbType = Boolean), @__ef_filter__p_3='?' (DbType = Boolean), @__ef_filter__p_0='?' (DbType = Boolean), @__user_Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Name]
+FROM [AbpUserRoles] AS [a]
+INNER JOIN (
+    SELECT [a0].[Id], [a0].[Name]
+    FROM [AbpRoles] AS [a0]
+    WHERE (@__ef_filter__p_2 = CAST(1 AS bit) OR [a0].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_3 = CAST(1 AS bit) OR ([a0].[TenantId] IS NULL))
+) AS [t] ON [a].[RoleId] = [t].[Id]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[UserId] = @__user_Id_0
+INFO  2023-06-05 11:29:02,575 [25   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__ef_filter__p_3='?' (DbType = Boolean), @__ef_filter__p_4='?' (DbType = Boolean), @__ef_filter__p_6='?' (DbType = Boolean), @__ef_filter__p_7='?' (DbType = Boolean), @__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__user_Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Name]
+FROM [AbpUserOrganizationUnits] AS [a]
+INNER JOIN (
+    SELECT [a0].[OrganizationUnitId], [a0].[RoleId]
+    FROM [AbpOrganizationUnitRoles] AS [a0]
+    WHERE (@__ef_filter__p_3 = CAST(1 AS bit) OR [a0].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_4 = CAST(1 AS bit) OR ([a0].[TenantId] IS NULL))
+) AS [t] ON [a].[OrganizationUnitId] = [t].[OrganizationUnitId]
+INNER JOIN (
+    SELECT [a1].[Id], [a1].[Name]
+    FROM [AbpRoles] AS [a1]
+    WHERE (@__ef_filter__p_6 = CAST(1 AS bit) OR [a1].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_7 = CAST(1 AS bit) OR ([a1].[TenantId] IS NULL))
+) AS [t0] ON [t].[RoleId] = [t0].[Id]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[UserId] = @__user_Id_0
+INFO  2023-06-05 11:29:02,587 [25   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__normalizedName_0='?' (Size = 32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[Description], [a].[DisplayName], [a].[IsDefault], [a].[IsDeleted], [a].[IsStatic], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[NormalizedName], [a].[TenantId]
+FROM [AbpRoles] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[NormalizedName] = @__normalizedName_0
+INFO  2023-06-05 11:29:02,632 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[Discriminator], [a].[IsGranted], [a].[Name], [a].[TenantId], [a].[UserId]
+FROM [AbpPermissions] AS [a]
+WHERE [a].[Discriminator] = N'UserPermissionSetting' AND (@__ef_filter__p_0 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[UserId] = @__userId_0
+INFO  2023-06-05 11:29:02,686 [4    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[Description], [a].[DisplayName], [a].[IsDefault], [a].[IsDeleted], [a].[IsStatic], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[NormalizedName], [a].[TenantId]
+FROM [AbpRoles] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[Id] = @__p_0
+INFO  2023-06-05 11:29:02,741 [25   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__roleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[Discriminator], [a].[IsGranted], [a].[Name], [a].[TenantId], [a].[RoleId]
+FROM [AbpPermissions] AS [a]
+WHERE [a].[Discriminator] = N'RolePermissionSetting' AND (@__ef_filter__p_0 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[RoleId] = @__roleId_0
+INFO  2023-06-05 11:29:04,117 [23   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 3960.413ms.
+INFO  2023-06-05 11:29:04,124 [23   ] c.Infrastructure.ControllerActionInvoker - Executed action LibrarySystemForDemo.Web.Controllers.HomeController.Index (LibrarySystemForDemo.Web.Mvc) in 4009.1535ms
+INFO  2023-06-05 11:29:04,128 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LibrarySystemForDemo.Web.Controllers.HomeController.Index (LibrarySystemForDemo.Web.Mvc)'
+INFO  2023-06-05 11:29:04,168 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/ - - - 200 - text/html;+charset=utf-8 4076.6458ms
+INFO  2023-06-05 11:29:04,184 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/datatables/css/buttons.bootstrap4.min.css?v=gG7aI_E7q8bkMZWEAjius-llVl-GPTpsfccS1s2UF5w - -
+INFO  2023-06-05 11:29:04,213 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/datatables/css/responsive.bootstrap4.min.css?v=U7cKvBF96CeSqpzNEnxO6RH_hOJb5Xw885tusTTX6wI - -
+INFO  2023-06-05 11:29:04,222 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Shared/_Layout.css?v=BQOnwVGj0YV0ekFeeHcJNzH2FKvW2PJm9V1buxmoWCU - -
+INFO  2023-06-05 11:29:04,225 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/datatables/css/responsive.bootstrap4.min.css was not modified
+INFO  2023-06-05 11:29:04,233 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Shared/_Layout.css was not modified
+INFO  2023-06-05 11:29:04,235 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/datatables/css/buttons.bootstrap4.min.css was not modified
+INFO  2023-06-05 11:29:04,249 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/datatables/css/dataTables.bootstrap4.min.css?v=STpv7j93gE6HYVfZWhvyWXNR720RedyFu67Is9RbBYk - -
+INFO  2023-06-05 11:29:04,260 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/datatables/css/buttons.bootstrap4.min.css?v=gG7aI_E7q8bkMZWEAjius-llVl-GPTpsfccS1s2UF5w - - - 304 - text/css 66.7202ms
+INFO  2023-06-05 11:29:04,265 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Shared/_Layout.css?v=BQOnwVGj0YV0ekFeeHcJNzH2FKvW2PJm9V1buxmoWCU - - - 304 - text/css 49.4154ms
+INFO  2023-06-05 11:29:04,279 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/datatables/js/dataTables.bootstrap4.min.js?v=x7er9UzDxtTEVMCQ77BEYIazL0OYvR0Xs5gRbC9a7FM - -
+INFO  2023-06-05 11:29:04,291 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/datatables/js/dataTables.responsive.min.js?v=lNhDn9rWCvb7iB-apRL-bi4SsUrHKLopvY8lE5nscyI - -
+INFO  2023-06-05 11:29:04,296 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/datatables/css/dataTables.bootstrap4.min.css was not modified
+INFO  2023-06-05 11:29:04,308 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/datatables/js/dataTables.bootstrap4.min.js was not modified
+INFO  2023-06-05 11:29:04,323 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/datatables/js/dataTables.responsive.min.js was not modified
+INFO  2023-06-05 11:29:04,325 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/datatables/js/dataTables.bootstrap4.min.js?v=x7er9UzDxtTEVMCQ77BEYIazL0OYvR0Xs5gRbC9a7FM - - - 304 - text/javascript 51.1672ms
+INFO  2023-06-05 11:29:04,332 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/datatables/css/dataTables.bootstrap4.min.css?v=STpv7j93gE6HYVfZWhvyWXNR720RedyFu67Is9RbBYk - - - 304 - text/css 71.5797ms
+INFO  2023-06-05 11:29:04,336 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/datatables/js/dataTables.buttons.js?v=V3De_o3VaP1FNTaXK01qIZqHnD0eZJd0XniW_x9Aa3Y - -
+INFO  2023-06-05 11:29:04,342 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/datatables/js/dataTables.responsive.min.js?v=lNhDn9rWCvb7iB-apRL-bi4SsUrHKLopvY8lE5nscyI - - - 304 - text/javascript 60.1797ms
+INFO  2023-06-05 11:29:04,352 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/datatables/js/buttons.bootstrap4.js?v=7tPJL63hI4QnZbV489_5KEpe7k6W5RzPTZkP8m6kzEE - -
+INFO  2023-06-05 11:29:04,357 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/datatables/js/dataTables.buttons.js was not modified
+INFO  2023-06-05 11:29:04,368 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/datatables/js/buttons.bootstrap4.js was not modified
+INFO  2023-06-05 11:29:04,378 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/datatables/js/dataTables.buttons.js?v=V3De_o3VaP1FNTaXK01qIZqHnD0eZJd0XniW_x9Aa3Y - - - 304 - text/javascript 31.4115ms
+INFO  2023-06-05 11:29:04,457 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/signalr/dist/browser/signalr.js?v=s5ortbhB2C3h17nHMtXwbCSN9YncRIZH6XrFTSO9vmk - -
+INFO  2023-06-05 11:29:04,489 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/datatables/js/buttons.bootstrap4.js?v=7tPJL63hI4QnZbV489_5KEpe7k6W5RzPTZkP8m6kzEE - - - 304 - text/javascript 46.0260ms
+INFO  2023-06-05 11:29:04,525 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/datatables.ajax.min.js?v=5j2eOMHYIMF79je8GeR2DyqDip36ydsldEMjOB-7Wvg - -
+INFO  2023-06-05 11:29:04,531 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/signalr/dist/browser/signalr.js was not modified
+INFO  2023-06-05 11:29:04,543 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/admin-lte/dist/img/avatar5.png - -
+INFO  2023-06-05 11:29:04,552 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/signalr/dist/browser/signalr.js?v=s5ortbhB2C3h17nHMtXwbCSN9YncRIZH6XrFTSO9vmk - - - 304 - text/javascript 188.9090ms
+INFO  2023-06-05 11:29:04,559 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/push.js/push.js?v=S20KyuznGr0nK1qmIqJ9HA-w2vA057YmagmOfkSmblw - -
+INFO  2023-06-05 11:29:04,562 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/_Bundles/datatables.ajax.min.js was not modified
+INFO  2023-06-05 11:29:04,569 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/push.js/push.js was not modified
+INFO  2023-06-05 11:29:04,577 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/admin-lte/dist/img/avatar5.png was not modified
+INFO  2023-06-05 11:29:04,580 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/push.js/push.js?v=S20KyuznGr0nK1qmIqJ9HA-w2vA057YmagmOfkSmblw - - - 304 - text/javascript 66.8951ms
+INFO  2023-06-05 11:29:04,586 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/datatables.ajax.min.js?v=5j2eOMHYIMF79je8GeR2DyqDip36ydsldEMjOB-7Wvg - - - 304 - text/javascript 265.8169ms
+INFO  2023-06-05 11:29:04,590 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/admin-lte/dist/img/avatar5.png - - - 304 - image/png 77.1262ms
+INFO  2023-06-05 11:29:04,592 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/datatables/css/responsive.bootstrap4.min.css?v=U7cKvBF96CeSqpzNEnxO6RH_hOJb5Xw885tusTTX6wI - - - 304 - text/css 54.7953ms
+INFO  2023-06-05 11:29:04,596 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/helpers.min.js?v=kSjRuWZBH1TVTvCfVxaAQlKq_JbwxeM864-Qq1bEPUE - -
+INFO  2023-06-05 11:29:04,599 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/datatables/js/jquery.dataTables.min.js?v=itm1F-qFhcjfGnrv-v18AA-Fa7sA8rQIT7J0YenNH64 - -
+INFO  2023-06-05 11:29:04,603 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/datatables/js/responsive.bootstrap4.min.js?v=aXVO47Rb7s58FhMTCwbM39en_1XcmzGkClRzBe5txKs - -
+INFO  2023-06-05 11:29:04,606 [23   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/_Bundles/helpers.min.js was not modified
+INFO  2023-06-05 11:29:04,611 [25   ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/datatables/js/jquery.dataTables.min.js was not modified
+INFO  2023-06-05 11:29:04,614 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/helpers.min.js?v=kSjRuWZBH1TVTvCfVxaAQlKq_JbwxeM864-Qq1bEPUE - - - 304 - text/javascript 361.7543ms
+INFO  2023-06-05 11:29:04,620 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/datatables/js/jquery.dataTables.min.js?v=itm1F-qFhcjfGnrv-v18AA-Fa7sA8rQIT7J0YenNH64 - - - 304 - text/javascript 367.1466ms
+INFO  2023-06-05 11:29:04,627 [27   ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/datatables/js/responsive.bootstrap4.min.js was not modified
+INFO  2023-06-05 11:29:04,669 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638215613105515403 - -
+INFO  2023-06-05 11:29:04,715 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638215613105515403 - -
+INFO  2023-06-05 11:29:04,734 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/chartjs/dist/Chart.js?v=dChmkTPsPsTV13HU145uFtyThdb6GJpTcnYka2efamM - -
+INFO  2023-06-05 11:29:04,739 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/js/abp.dataTable.js?v=TH3AvJS0L-m2ussyjjj62oBhUVoW8y0nYyLFLDagIJI - -
+INFO  2023-06-05 11:29:04,743 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-06-05 11:29:04,758 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-06-05 11:29:04,766 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /js/abp.dataTable.js was not modified
+INFO  2023-06-05 11:29:04,770 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/chartjs/dist/Chart.js was not modified
+INFO  2023-06-05 11:29:04,788 [23   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2023-06-05 11:29:04,804 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/js/abp.dataTable.js?v=TH3AvJS0L-m2ussyjjj62oBhUVoW8y0nYyLFLDagIJI - - - 304 - text/javascript 91.3368ms
+INFO  2023-06-05 11:29:04,810 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/chartjs/dist/Chart.js?v=dChmkTPsPsTV13HU145uFtyThdb6GJpTcnYka2efamM - - - 304 - text/javascript 53.9914ms
+INFO  2023-06-05 11:29:04,815 [23   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2023-06-05 11:29:04,818 [25   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2023-06-05 11:29:04,851 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/datatables/js/responsive.bootstrap4.min.js?v=aXVO47Rb7s58FhMTCwbM39en_1XcmzGkClRzBe5txKs - - - 304 - text/javascript 285.5900ms
+INFO  2023-06-05 11:29:04,857 [23   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 29.6029ms
+INFO  2023-06-05 11:29:04,866 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.signalr-client.js?v=7OzpM5utNWYP8ne_218zbUCD3Xj_R1GqM6AzwpgQktg - -
+INFO  2023-06-05 11:29:04,871 [28   ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/abp-web-resources/Abp/Framework/scripts/libs/abp.signalr-client.js was not modified
+INFO  2023-06-05 11:29:04,879 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.signalr-client.js?v=7OzpM5utNWYP8ne_218zbUCD3Xj_R1GqM6AzwpgQktg - - - 304 - text/javascript 456.7202ms
+INFO  2023-06-05 11:29:04,913 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-06-05 11:29:04,927 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - -
+INFO  2023-06-05 11:29:04,937 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Home/Index.js?v=K0D6HsrS69XXLRtWKoTtWGYinGZNmmZF6gpiRobQkK4 - -
+INFO  2023-06-05 11:29:04,960 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - -
+INFO  2023-06-05 11:29:04,972 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Home/Index.js was not modified
+INFO  2023-06-05 11:29:04,981 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2023-06-05 11:29:04,986 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Home/Index.js?v=K0D6HsrS69XXLRtWKoTtWGYinGZNmmZF6gpiRobQkK4 - - - 304 - text/javascript 60.1249ms
+INFO  2023-06-05 11:29:04,989 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - - 200 12026 application/javascript;+charset=utf-8 54.2966ms
+INFO  2023-06-05 11:29:04,994 [20   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[TenantId], [a].[UserId], [a].[Value]
+FROM [AbpSettings] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[UserId] = @__userId_0 AND ([a].[TenantId] IS NULL)
+INFO  2023-06-05 11:29:05,003 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638215613105515403 - - - 200 20586 application/x-javascript 290.7672ms
+INFO  2023-06-05 11:29:05,009 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2023-06-05 11:29:05,018 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/img/logo.png - -
+INFO  2023-06-05 11:29:05,079 [29   ] NetCore.StaticFiles.StaticFileMiddleware - The file /img/logo.png was not modified
+INFO  2023-06-05 11:29:05,087 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 190.6169ms
+INFO  2023-06-05 11:29:05,099 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/img/logo.png - - - 304 - image/png 532.2722ms
+INFO  2023-06-05 11:29:05,131 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2023-06-05 11:29:05,139 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate text/plain;charset=UTF-8 0 - 200 273 application/json 201.6493ms
+INFO  2023-06-05 11:29:05,149 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=yN92sw4Pdqoau6Bf8rKWRQ - -
+INFO  2023-06-05 11:29:05,163 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+INFO  2023-06-05 11:29:05,193 [4    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2023-06-05 11:29:05,204 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 376.266ms
+INFO  2023-06-05 11:29:05,212 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-06-05 11:29:05,227 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638215613105515403 - - - 200 25345 application/x-javascript;+charset=utf-8 589.2755ms
+DEBUG 2023-06-05 11:29:05,402 [4    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"yN92sw4Pdqoau6Bf8rKWRQ","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2023-06-05T11:29:05.3718229+08:00","Properties":{}}
+DEBUG 2023-06-05 11:29:05,437 [4    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: yN92sw4Pdqoau6Bf8rKWRQ
+INFO  2023-06-05 11:29:05,704 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Student - -
+INFO  2023-06-05 11:29:05,714 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LibrarySystemForDemo.Web.Controllers.StudentController.Index (LibrarySystemForDemo.Web.Mvc)'
+INFO  2023-06-05 11:29:05,730 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Student", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String) on controller LibrarySystemForDemo.Web.Controllers.StudentController (LibrarySystemForDemo.Web.Mvc).
+INFO  2023-06-05 11:29:05,974 [4    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (127ms) [Parameters=[@__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__p_0='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreationTime], [s].[CreatorUserId], [s].[DeleterUserId], [s].[DeletionTime], [s].[DepartmentId], [s].[IsDeleted], [s].[LastModificationTime], [s].[LastModifierUserId], [s].[StudentContactNumber], [s].[StudentEmail], [s].[StudentName], [t].[Id], [t].[CreationTime], [t].[CreatorUserId], [t].[DeleterUserId], [t].[DeletionTime], [t].[IsDeleted], [t].[LastModificationTime], [t].[LastModifierUserId], [t].[Name]
+FROM [Students] AS [s]
+INNER JOIN (
+    SELECT [d].[Id], [d].[CreationTime], [d].[CreatorUserId], [d].[DeleterUserId], [d].[DeletionTime], [d].[IsDeleted], [d].[LastModificationTime], [d].[LastModifierUserId], [d].[Name]
+    FROM [Departments] AS [d]
+    WHERE @__ef_filter__p_1 = CAST(1 AS bit) OR [d].[IsDeleted] = CAST(0 AS bit)
+) AS [t] ON [s].[DepartmentId] = [t].[Id]
+WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [s].[IsDeleted] = CAST(0 AS bit)
+INFO  2023-06-05 11:29:06,001 [6    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INFO  2023-06-05 11:29:06,155 [4    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (22ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:29:06,524 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2023-06-05 11:29:06,568 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Department' in localization source 'LibrarySystemForDemo'!
+INFO  2023-06-05 11:29:06,627 [30   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[Id] = @__p_0
+INFO  2023-06-05 11:29:06,676 [30   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[Id] = @__p_0
+INFO  2023-06-05 11:29:06,753 [4    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 723.2277ms.
+INFO  2023-06-05 11:29:06,765 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action LibrarySystemForDemo.Web.Controllers.StudentController.Index (LibrarySystemForDemo.Web.Mvc) in 1022.9197ms
+INFO  2023-06-05 11:29:06,771 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LibrarySystemForDemo.Web.Controllers.StudentController.Index (LibrarySystemForDemo.Web.Mvc)'
+INFO  2023-06-05 11:29:06,790 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Student - - - 200 - text/html;+charset=utf-8 1081.1585ms
+DEBUG 2023-06-05 11:29:06,807 [9    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: yN92sw4Pdqoau6Bf8rKWRQ
+INFO  2023-06-05 11:29:06,828 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2023-06-05 11:29:06,837 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - -
+INFO  2023-06-05 11:29:06,841 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Student/Index.js?v=_SuWFmHVgDJO26_3auszMChId44JbMvWwDzZImnA03M - -
+INFO  2023-06-05 11:29:06,851 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=yN92sw4Pdqoau6Bf8rKWRQ - - - 101 - - 1687.5877ms
+INFO  2023-06-05 11:29:06,908 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638215613105515403 - -
+INFO  2023-06-05 11:29:06,957 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - - 200 12026 application/javascript;+charset=utf-8 43.3202ms
+INFO  2023-06-05 11:29:06,973 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638215613105515403 - -
+INFO  2023-06-05 11:29:06,988 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - -
+INFO  2023-06-05 11:29:07,005 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2023-06-05 11:29:07,008 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-06-05 11:29:07,023 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-06-05 11:29:07,036 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2023-06-05 11:29:07,039 [9    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2023-06-05 11:29:07,051 [6    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2023-06-05 11:29:07,058 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2023-06-05 11:29:07,075 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2023-06-05 11:29:07,086 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate text/plain;charset=UTF-8 0 - 200 273 application/json 67.7696ms
+INFO  2023-06-05 11:29:07,100 [9    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2023-06-05 11:29:07,106 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=uOdwLUd515FglMLc-hJtvA - -
+INFO  2023-06-05 11:29:07,114 [6    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 48.5763ms
+INFO  2023-06-05 11:29:07,117 [9    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 69.0761ms
+INFO  2023-06-05 11:29:07,122 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-06-05 11:29:07,128 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-06-05 11:29:07,140 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638215613105515403 - - - 200 20586 application/x-javascript 281.1276ms
+INFO  2023-06-05 11:29:07,144 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+INFO  2023-06-05 11:29:07,150 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638215613105515403 - - - 200 25345 application/x-javascript;+charset=utf-8 258.6287ms
+INFO  2023-06-05 11:29:07,163 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Student/Index.js'. Physical path: 'C:\Users\Adrienne.Garimbao\Desktop\MVC Training Project by Adrienne\aspnet-core\src\LibrarySystemForDemo.Web.Mvc\wwwroot\view-resources\Views\Student\Index.js'
+INFO  2023-06-05 11:29:07,179 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Student/Index.js?v=_SuWFmHVgDJO26_3auszMChId44JbMvWwDzZImnA03M - - - 200 1199 text/javascript 335.4912ms
+DEBUG 2023-06-05 11:29:07,182 [9    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"uOdwLUd515FglMLc-hJtvA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2023-06-05T11:29:07.1827494+08:00","Properties":{}}
+DEBUG 2023-06-05 11:29:07,184 [9    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: uOdwLUd515FglMLc-hJtvA
+INFO  2023-06-05 11:29:07,241 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 257.9107ms
+INFO  2023-06-05 11:29:11,181 [6    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:29:14,141 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/push.js/push.js.map - -
+INFO  2023-06-05 11:29:14,158 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/signalr/dist/browser/signalr.js.map - -
+INFO  2023-06-05 11:29:14,164 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/bootstrap/dist/js/bootstrap.bundle.js.map - -
+INFO  2023-06-05 11:29:14,168 [27   ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/signalr/dist/browser/signalr.js.map was not modified
+INFO  2023-06-05 11:29:14,183 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/admin-lte/dist/js/adminlte.js.map - -
+INFO  2023-06-05 11:29:14,191 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/bootstrap/dist/js/bootstrap.bundle.js.map was not modified
+INFO  2023-06-05 11:29:14,203 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/signalr/dist/browser/signalr.js.map - - - 304 - text/plain 30.2952ms
+INFO  2023-06-05 11:29:14,213 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/bootstrap/dist/js/bootstrap.bundle.js.map - - - 304 - text/plain 59.2363ms
+INFO  2023-06-05 11:29:14,228 [28   ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/admin-lte/dist/js/adminlte.js.map was not modified
+INFO  2023-06-05 11:29:14,244 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/toastr/toastr.js.map - -
+INFO  2023-06-05 11:29:14,249 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/admin-lte/dist/js/adminlte.js.map - - - 304 - text/plain 92.6274ms
+INFO  2023-06-05 11:29:14,254 [29   ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/toastr/toastr.js.map was not modified
+INFO  2023-06-05 11:29:14,270 [30   ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/push.js/push.js.map was not modified
+INFO  2023-06-05 11:29:14,328 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/toastr/toastr.js.map - - - 304 - text/plain 122.2761ms
+INFO  2023-06-05 11:29:14,336 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/push.js/push.js.map - - - 304 - text/plain 177.0185ms
+INFO  2023-06-05 11:29:14,342 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/admin-lte/dist/css/adminlte.min.css.map - -
+INFO  2023-06-05 11:29:14,353 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /libs/admin-lte/dist/css/adminlte.min.css.map was not modified
+INFO  2023-06-05 11:29:14,382 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/admin-lte/dist/css/adminlte.min.css.map - - - 304 - text/plain 25.4683ms
+INFO  2023-06-05 11:29:16,238 [30   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:29:19,726 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Student/CreateOrEdit - -
+INFO  2023-06-05 11:29:19,732 [30   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LibrarySystemForDemo.Web.Controllers.StudentController.CreateOrEdit (LibrarySystemForDemo.Web.Mvc)'
+INFO  2023-06-05 11:29:19,739 [30   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "CreateOrEdit", controller = "Student", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrEdit(System.Nullable`1[System.Int32]) on controller LibrarySystemForDemo.Web.Controllers.StudentController (LibrarySystemForDemo.Web.Mvc).
+INFO  2023-06-05 11:29:19,789 [27   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Departments] AS [d]
+WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [d].[IsDeleted] = CAST(0 AS bit)
+INFO  2023-06-05 11:29:19,844 [25   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[Id], [d].[CreationTime], [d].[CreatorUserId], [d].[DeleterUserId], [d].[DeletionTime], [d].[IsDeleted], [d].[LastModificationTime], [d].[LastModifierUserId], [d].[Name]
+FROM [Departments] AS [d]
+WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [d].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [d].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+INFO  2023-06-05 11:29:19,932 [25   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INFO  2023-06-05 11:29:20,182 [25   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view CreateOrEdit.
+INFO  2023-06-05 11:29:20,263 [29   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[Id] = @__p_0
+INFO  2023-06-05 11:29:20,285 [29   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[Id] = @__p_0
+INFO  2023-06-05 11:29:20,317 [29   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view CreateOrEdit executed in 378.6485ms.
+INFO  2023-06-05 11:29:20,328 [29   ] c.Infrastructure.ControllerActionInvoker - Executed action LibrarySystemForDemo.Web.Controllers.StudentController.CreateOrEdit (LibrarySystemForDemo.Web.Mvc) in 578.3419ms
+DEBUG 2023-06-05 11:29:20,328 [4    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: uOdwLUd515FglMLc-hJtvA
+INFO  2023-06-05 11:29:20,352 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LibrarySystemForDemo.Web.Controllers.StudentController.CreateOrEdit (LibrarySystemForDemo.Web.Mvc)'
+INFO  2023-06-05 11:29:20,369 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2023-06-05 11:29:20,382 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=uOdwLUd515FglMLc-hJtvA - - - 101 - - 13278.2907ms
+INFO  2023-06-05 11:29:20,508 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Student/CreateOrEdit - - - 200 - text/html;+charset=utf-8 679.1514ms
+INFO  2023-06-05 11:29:20,537 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638215613105515403 - -
+INFO  2023-06-05 11:29:20,547 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638215613105515403 - -
+INFO  2023-06-05 11:29:20,583 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - -
+INFO  2023-06-05 11:29:20,585 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - -
+INFO  2023-06-05 11:29:20,592 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-06-05 11:29:20,595 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Student/CreateOrEdit.js?v=XWoKVh7xYwykmrKJ5cwHrGTb3v9c4j-mljH8HaulLGY - -
+INFO  2023-06-05 11:29:20,599 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - - 200 12026 application/javascript;+charset=utf-8 12.7836ms
+INFO  2023-06-05 11:29:20,603 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2023-06-05 11:29:20,607 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-06-05 11:29:20,613 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Student/CreateOrEdit.js'. Physical path: 'C:\Users\Adrienne.Garimbao\Desktop\MVC Training Project by Adrienne\aspnet-core\src\LibrarySystemForDemo.Web.Mvc\wwwroot\view-resources\Views\Student\CreateOrEdit.js'
+INFO  2023-06-05 11:29:20,619 [4    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2023-06-05 11:29:20,627 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Student/CreateOrEdit.js?v=XWoKVh7xYwykmrKJ5cwHrGTb3v9c4j-mljH8HaulLGY - - - 200 1605 text/javascript 66.3409ms
+INFO  2023-06-05 11:29:20,632 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 24.5513ms
+INFO  2023-06-05 11:29:20,643 [29   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2023-06-05 11:29:20,682 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-06-05 11:29:20,701 [29   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2023-06-05 11:29:20,727 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638215613105515403 - - - 200 20586 application/x-javascript 145.8520ms
+INFO  2023-06-05 11:29:20,760 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 111.6460ms
+INFO  2023-06-05 11:29:20,856 [29   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 95.826ms
+INFO  2023-06-05 11:29:20,879 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-06-05 11:29:20,902 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638215613105515403 - - - 200 25345 application/x-javascript;+charset=utf-8 372.0798ms
+INFO  2023-06-05 11:29:21,288 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2023-06-05 11:29:21,654 [28   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (18ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:29:21,690 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2023-06-05 11:29:21,722 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2023-06-05 11:29:21,747 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate text/plain;charset=UTF-8 0 - 200 273 application/json 579.2257ms
+INFO  2023-06-05 11:29:21,790 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=D1fOiO2Cl5QK3uZhoBcDPw - -
+INFO  2023-06-05 11:29:21,825 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2023-06-05 11:29:21,903 [4    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"D1fOiO2Cl5QK3uZhoBcDPw","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2023-06-05T11:29:21.9037939+08:00","Properties":{}}
+DEBUG 2023-06-05 11:29:21,904 [4    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: D1fOiO2Cl5QK3uZhoBcDPw
+INFO  2023-06-05 11:29:26,677 [30   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:29:31,694 [29   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:29:36,711 [27   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:29:41,739 [29   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:29:46,752 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:29:51,778 [30   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:29:56,811 [30   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:30:01,796 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/api/services/app/Student/Create application/json 150
+INFO  2023-06-05 11:30:01,812 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LibrarySystemForDemo.Students.StudentAppService.CreateAsync (LibrarySystemForDemo.Application)'
+INFO  2023-06-05 11:30:01,829 [29   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Create", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[LibrarySystemForDemo.Students.Dto.StudentDto] CreateAsync(LibrarySystemForDemo.Students.Dto.CreateStudentDto) on controller LibrarySystemForDemo.Students.StudentAppService (LibrarySystemForDemo.Application).
+INFO  2023-06-05 11:30:01,845 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:30:02,111 [29   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (46ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int64), @p2='?' (DbType = Int64), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTime2), @p7='?' (DbType = Int64), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Students] ([CreationTime], [CreatorUserId], [DeleterUserId], [DeletionTime], [DepartmentId], [IsDeleted], [LastModificationTime], [LastModifierUserId], [StudentContactNumber], [StudentEmail], [StudentName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+INFO  2023-06-05 11:30:02,154 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INFO  2023-06-05 11:30:02,173 [23   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2023-06-05 11:30:02,206 [23   ] c.Infrastructure.ControllerActionInvoker - Executed action LibrarySystemForDemo.Students.StudentAppService.CreateAsync (LibrarySystemForDemo.Application) in 373.9133ms
+INFO  2023-06-05 11:30:02,214 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LibrarySystemForDemo.Students.StudentAppService.CreateAsync (LibrarySystemForDemo.Application)'
+INFO  2023-06-05 11:30:02,219 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/api/services/app/Student/Create application/json 150 - 200 261 application/json;+charset=utf-8 445.9852ms
+INFO  2023-06-05 11:30:06,399 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Student - -
+INFO  2023-06-05 11:30:06,419 [30   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LibrarySystemForDemo.Web.Controllers.StudentController.Index (LibrarySystemForDemo.Web.Mvc)'
+INFO  2023-06-05 11:30:06,430 [30   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Student", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String) on controller LibrarySystemForDemo.Web.Controllers.StudentController (LibrarySystemForDemo.Web.Mvc).
+INFO  2023-06-05 11:30:06,499 [30   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (60ms) [Parameters=[@__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__p_0='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreationTime], [s].[CreatorUserId], [s].[DeleterUserId], [s].[DeletionTime], [s].[DepartmentId], [s].[IsDeleted], [s].[LastModificationTime], [s].[LastModifierUserId], [s].[StudentContactNumber], [s].[StudentEmail], [s].[StudentName], [t].[Id], [t].[CreationTime], [t].[CreatorUserId], [t].[DeleterUserId], [t].[DeletionTime], [t].[IsDeleted], [t].[LastModificationTime], [t].[LastModifierUserId], [t].[Name]
+FROM [Students] AS [s]
+INNER JOIN (
+    SELECT [d].[Id], [d].[CreationTime], [d].[CreatorUserId], [d].[DeleterUserId], [d].[DeletionTime], [d].[IsDeleted], [d].[LastModificationTime], [d].[LastModifierUserId], [d].[Name]
+    FROM [Departments] AS [d]
+    WHERE @__ef_filter__p_1 = CAST(1 AS bit) OR [d].[IsDeleted] = CAST(0 AS bit)
+) AS [t] ON [s].[DepartmentId] = [t].[Id]
+WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [s].[IsDeleted] = CAST(0 AS bit)
+INFO  2023-06-05 11:30:06,524 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INFO  2023-06-05 11:30:06,533 [23   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2023-06-05 11:30:06,535 [23   ] naries.DictionaryBasedLocalizationSource - Can not find 'Department' in localization source 'LibrarySystemForDemo'!
+INFO  2023-06-05 11:30:06,552 [29   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[Id] = @__p_0
+INFO  2023-06-05 11:30:06,565 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[Id] = @__p_0
+INFO  2023-06-05 11:30:06,685 [23   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 69.499ms.
+DEBUG 2023-06-05 11:30:06,688 [29   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: D1fOiO2Cl5QK3uZhoBcDPw
+INFO  2023-06-05 11:30:06,704 [23   ] c.Infrastructure.ControllerActionInvoker - Executed action LibrarySystemForDemo.Web.Controllers.StudentController.Index (LibrarySystemForDemo.Web.Mvc) in 255.641ms
+INFO  2023-06-05 11:30:06,745 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2023-06-05 11:30:06,749 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LibrarySystemForDemo.Web.Controllers.StudentController.Index (LibrarySystemForDemo.Web.Mvc)'
+INFO  2023-06-05 11:30:06,760 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=D1fOiO2Cl5QK3uZhoBcDPw - - - 101 - - 44999.4199ms
+INFO  2023-06-05 11:30:06,938 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (20ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:30:07,342 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Student - - - 200 - text/html;+charset=utf-8 865.2244ms
+INFO  2023-06-05 11:30:07,364 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638215613105515403 - -
+INFO  2023-06-05 11:30:07,383 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638215613105515403 - -
+INFO  2023-06-05 11:30:07,414 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - -
+INFO  2023-06-05 11:30:07,450 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-06-05 11:30:07,463 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Student/Index.js?v=_SuWFmHVgDJO26_3auszMChId44JbMvWwDzZImnA03M - -
+INFO  2023-06-05 11:30:07,480 [23   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2023-06-05 11:30:07,517 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - - 200 12026 application/javascript;+charset=utf-8 94.7590ms
+INFO  2023-06-05 11:30:07,563 [23   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2023-06-05 11:30:07,573 [30   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Student/Index.js was not modified
+INFO  2023-06-05 11:30:07,589 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - -
+INFO  2023-06-05 11:30:07,599 [23   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 93.5774ms
+INFO  2023-06-05 11:30:07,602 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Student/Index.js?v=_SuWFmHVgDJO26_3auszMChId44JbMvWwDzZImnA03M - - - 304 - text/javascript 215.9558ms
+INFO  2023-06-05 11:30:07,605 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-06-05 11:30:07,612 [34   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-06-05 11:30:07,620 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638215613105515403 - - - 200 25345 application/x-javascript;+charset=utf-8 249.0098ms
+INFO  2023-06-05 11:30:07,692 [34   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2023-06-05 11:30:07,903 [34   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2023-06-05 11:30:07,924 [34   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 209.2115ms
+INFO  2023-06-05 11:30:07,977 [34   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-06-05 11:30:07,994 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2023-06-05 11:30:08,039 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 582.2989ms
+INFO  2023-06-05 11:30:08,056 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2023-06-05 11:30:08,071 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638215613105515403 - - - 200 20586 application/x-javascript 635.7101ms
+INFO  2023-06-05 11:30:08,093 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2023-06-05 11:30:08,141 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate text/plain;charset=UTF-8 0 - 200 273 application/json 116.3666ms
+INFO  2023-06-05 11:30:08,159 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=qnPw_zcJjo-140aDf-reNA - -
+INFO  2023-06-05 11:30:08,183 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2023-06-05 11:30:08,361 [29   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"qnPw_zcJjo-140aDf-reNA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2023-06-05T11:30:08.3617946+08:00","Properties":{}}
+DEBUG 2023-06-05 11:30:08,365 [29   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: qnPw_zcJjo-140aDf-reNA
+INFO  2023-06-05 11:30:11,995 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (12ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:30:14,076 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Student/CreateOrEdit/1 - -
+INFO  2023-06-05 11:30:14,084 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LibrarySystemForDemo.Web.Controllers.StudentController.CreateOrEdit (LibrarySystemForDemo.Web.Mvc)'
+INFO  2023-06-05 11:30:14,091 [23   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "CreateOrEdit", controller = "Student", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrEdit(System.Nullable`1[System.Int32]) on controller LibrarySystemForDemo.Web.Controllers.StudentController (LibrarySystemForDemo.Web.Mvc).
+INFO  2023-06-05 11:30:14,107 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Departments] AS [d]
+WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [d].[IsDeleted] = CAST(0 AS bit)
+INFO  2023-06-05 11:30:14,119 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[Id], [d].[CreationTime], [d].[CreatorUserId], [d].[DeleterUserId], [d].[DeletionTime], [d].[IsDeleted], [d].[LastModificationTime], [d].[LastModifierUserId], [d].[Name]
+FROM [Departments] AS [d]
+WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [d].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [d].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+INFO  2023-06-05 11:30:14,146 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[CreationTime], [s].[CreatorUserId], [s].[DeleterUserId], [s].[DeletionTime], [s].[DepartmentId], [s].[IsDeleted], [s].[LastModificationTime], [s].[LastModifierUserId], [s].[StudentContactNumber], [s].[StudentEmail], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [s].[IsDeleted] = CAST(0 AS bit)) AND [s].[Id] = @__p_0
+INFO  2023-06-05 11:30:14,165 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INFO  2023-06-05 11:30:14,170 [23   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view CreateOrEdit.
+INFO  2023-06-05 11:30:14,189 [29   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[Id] = @__p_0
+INFO  2023-06-05 11:30:14,201 [29   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[Id] = @__p_0
+INFO  2023-06-05 11:30:14,258 [29   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view CreateOrEdit executed in 77.7757ms.
+DEBUG 2023-06-05 11:30:14,259 [36   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: qnPw_zcJjo-140aDf-reNA
+INFO  2023-06-05 11:30:14,263 [29   ] c.Infrastructure.ControllerActionInvoker - Executed action LibrarySystemForDemo.Web.Controllers.StudentController.CreateOrEdit (LibrarySystemForDemo.Web.Mvc) in 167.3073ms
+INFO  2023-06-05 11:30:14,266 [36   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2023-06-05 11:30:14,270 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LibrarySystemForDemo.Web.Controllers.StudentController.CreateOrEdit (LibrarySystemForDemo.Web.Mvc)'
+INFO  2023-06-05 11:30:14,278 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=qnPw_zcJjo-140aDf-reNA - - - 101 - - 6126.9787ms
+INFO  2023-06-05 11:30:14,326 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Student/CreateOrEdit/1 - - - 200 - text/html;+charset=utf-8 209.2582ms
+INFO  2023-06-05 11:30:14,401 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - -
+INFO  2023-06-05 11:30:14,437 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - -
+INFO  2023-06-05 11:30:14,450 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638215613105515403 - -
+INFO  2023-06-05 11:30:14,465 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - - 200 12026 application/javascript;+charset=utf-8 78.7164ms
+INFO  2023-06-05 11:30:14,480 [30   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-06-05 11:30:14,516 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638215613105515403 - -
+INFO  2023-06-05 11:30:14,538 [30   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2023-06-05 11:30:14,550 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-06-05 11:30:14,791 [30   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2023-06-05 11:30:14,847 [33   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2023-06-05 11:30:14,883 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 408.1085ms
+INFO  2023-06-05 11:30:14,902 [30   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 309.5473ms
+INFO  2023-06-05 11:30:14,926 [33   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2023-06-05 11:30:14,967 [30   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-06-05 11:30:15,028 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2023-06-05 11:30:15,039 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638215613105515403 - - - 200 20586 application/x-javascript 586.0538ms
+INFO  2023-06-05 11:30:15,043 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2023-06-05 11:30:15,045 [33   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 122.647ms
+INFO  2023-06-05 11:30:15,050 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Student/CreateOrEdit.js?v=XWoKVh7xYwykmrKJ5cwHrGTb3v9c4j-mljH8HaulLGY - -
+INFO  2023-06-05 11:30:15,053 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2023-06-05 11:30:15,065 [34   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Student/CreateOrEdit.js was not modified
+INFO  2023-06-05 11:30:15,075 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate text/plain;charset=UTF-8 0 - 200 273 application/json 127.0273ms
+INFO  2023-06-05 11:30:15,082 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-06-05 11:30:15,090 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Student/CreateOrEdit.js?v=XWoKVh7xYwykmrKJ5cwHrGTb3v9c4j-mljH8HaulLGY - - - 304 - text/javascript 676.7653ms
+INFO  2023-06-05 11:30:15,107 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638215613105515403 - - - 200 25345 application/x-javascript;+charset=utf-8 694.1549ms
+INFO  2023-06-05 11:30:15,137 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=ww-XKAYV9V-VKok-rw9QIA - -
+INFO  2023-06-05 11:30:15,268 [36   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2023-06-05 11:30:15,501 [36   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"ww-XKAYV9V-VKok-rw9QIA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2023-06-05T11:30:15.5013413+08:00","Properties":{}}
+DEBUG 2023-06-05 11:30:15,501 [36   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: ww-XKAYV9V-VKok-rw9QIA
+INFO  2023-06-05 11:30:17,016 [36   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:30:22,081 [36   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:30:27,151 [36   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (17ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:30:32,144 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 PUT https://localhost:44312/api/services/app/Student/Update application/json 152
+INFO  2023-06-05 11:30:32,175 [36   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LibrarySystemForDemo.Students.StudentAppService.UpdateAsync (LibrarySystemForDemo.Application)'
+INFO  2023-06-05 11:30:32,198 [36   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Update", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[LibrarySystemForDemo.Students.Dto.StudentDto] UpdateAsync(LibrarySystemForDemo.Students.Dto.StudentDto) on controller LibrarySystemForDemo.Students.StudentAppService (LibrarySystemForDemo.Application).
+INFO  2023-06-05 11:30:32,204 [35   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (14ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2023-06-05 11:30:32,226 [30   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[CreationTime], [s].[CreatorUserId], [s].[DeleterUserId], [s].[DeletionTime], [s].[DepartmentId], [s].[IsDeleted], [s].[LastModificationTime], [s].[LastModifierUserId], [s].[StudentContactNumber], [s].[StudentEmail], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [s].[IsDeleted] = CAST(0 AS bit)) AND [s].[Id] = @__p_0
+INFO  2023-06-05 11:30:32,312 [30   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (13ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (DbType = Int64), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Students] SET [LastModificationTime] = @p0, [LastModifierUserId] = @p1, [StudentName] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+INFO  2023-06-05 11:30:32,359 [30   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INFO  2023-06-05 11:30:32,371 [30   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2023-06-05 11:30:32,387 [30   ] c.Infrastructure.ControllerActionInvoker - Executed action LibrarySystemForDemo.Students.StudentAppService.UpdateAsync (LibrarySystemForDemo.Application) in 173.7918ms
+INFO  2023-06-05 11:30:32,394 [30   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LibrarySystemForDemo.Students.StudentAppService.UpdateAsync (LibrarySystemForDemo.Application)'
+INFO  2023-06-05 11:30:32,404 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 PUT https://localhost:44312/api/services/app/Student/Update application/json 152 - 200 263 application/json;+charset=utf-8 289.0646ms
+INFO  2023-06-05 11:30:35,721 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Student - -
+INFO  2023-06-05 11:30:35,749 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LibrarySystemForDemo.Web.Controllers.StudentController.Index (LibrarySystemForDemo.Web.Mvc)'
+INFO  2023-06-05 11:30:35,753 [23   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Student", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String) on controller LibrarySystemForDemo.Web.Controllers.StudentController (LibrarySystemForDemo.Web.Mvc).
+INFO  2023-06-05 11:30:35,769 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__p_0='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreationTime], [s].[CreatorUserId], [s].[DeleterUserId], [s].[DeletionTime], [s].[DepartmentId], [s].[IsDeleted], [s].[LastModificationTime], [s].[LastModifierUserId], [s].[StudentContactNumber], [s].[StudentEmail], [s].[StudentName], [t].[Id], [t].[CreationTime], [t].[CreatorUserId], [t].[DeleterUserId], [t].[DeletionTime], [t].[IsDeleted], [t].[LastModificationTime], [t].[LastModifierUserId], [t].[Name]
+FROM [Students] AS [s]
+INNER JOIN (
+    SELECT [d].[Id], [d].[CreationTime], [d].[CreatorUserId], [d].[DeleterUserId], [d].[DeletionTime], [d].[IsDeleted], [d].[LastModificationTime], [d].[LastModifierUserId], [d].[Name]
+    FROM [Departments] AS [d]
+    WHERE @__ef_filter__p_1 = CAST(1 AS bit) OR [d].[IsDeleted] = CAST(0 AS bit)
+) AS [t] ON [s].[DepartmentId] = [t].[Id]
+WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [s].[IsDeleted] = CAST(0 AS bit)
+INFO  2023-06-05 11:30:35,785 [29   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INFO  2023-06-05 11:30:35,799 [29   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2023-06-05 11:30:35,800 [29   ] naries.DictionaryBasedLocalizationSource - Can not find 'Department' in localization source 'LibrarySystemForDemo'!
+INFO  2023-06-05 11:30:35,816 [36   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[Id] = @__p_0
+INFO  2023-06-05 11:30:35,849 [23   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR ([a].[TenantId] IS NULL)) AND [a].[Id] = @__p_0
+DEBUG 2023-06-05 11:30:35,884 [29   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: ww-XKAYV9V-VKok-rw9QIA
+INFO  2023-06-05 11:30:35,884 [23   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 75.8008ms.
+INFO  2023-06-05 11:30:35,908 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2023-06-05 11:30:35,920 [23   ] c.Infrastructure.ControllerActionInvoker - Executed action LibrarySystemForDemo.Web.Controllers.StudentController.Index (LibrarySystemForDemo.Web.Mvc) in 148.9264ms
+INFO  2023-06-05 11:30:35,923 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=ww-XKAYV9V-VKok-rw9QIA - - - 101 - - 20835.3550ms
+INFO  2023-06-05 11:30:35,929 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LibrarySystemForDemo.Web.Controllers.StudentController.Index (LibrarySystemForDemo.Web.Mvc)'
+INFO  2023-06-05 11:30:35,970 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Student - - - 200 - text/html;+charset=utf-8 224.3028ms
+INFO  2023-06-05 11:30:36,030 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638215613105515403 - -
+INFO  2023-06-05 11:30:36,065 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - -
+INFO  2023-06-05 11:30:36,074 [34   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-06-05 11:30:36,086 [35   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - -
+INFO  2023-06-05 11:30:36,119 [34   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2023-06-05 11:30:36,288 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638215613105515403 - -
+INFO  2023-06-05 11:30:36,346 [34   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2023-06-05 11:30:36,540 [35   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - - 200 12026 application/javascript;+charset=utf-8 129.5267ms
+INFO  2023-06-05 11:30:36,581 [34   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 214.7485ms
+INFO  2023-06-05 11:30:36,592 [36   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-06-05 11:30:36,599 [34   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-06-05 11:30:36,610 [36   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2023-06-05 11:30:36,656 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638215613105515403 - - - 200 20586 application/x-javascript 599.2652ms
+INFO  2023-06-05 11:30:36,803 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 608.0524ms
+INFO  2023-06-05 11:30:36,864 [35   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2023-06-05 11:30:36,873 [36   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2023-06-05 11:30:36,882 [35   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2023-06-05 11:30:36,896 [35   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2023-06-05 11:30:36,905 [36   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 271.4308ms
+INFO  2023-06-05 11:30:36,915 [35   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate text/plain;charset=UTF-8 0 - 200 273 application/json 237.6898ms
+INFO  2023-06-05 11:30:36,924 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=lMxHxL2xn2r0fpNRX7nEiQ - -
+INFO  2023-06-05 11:30:36,935 [36   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-06-05 11:30:37,305 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+INFO  2023-06-05 11:30:37,608 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638215613105515403 - - - 200 25345 application/x-javascript;+charset=utf-8 934.7828ms
+DEBUG 2023-06-05 11:30:37,669 [36   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"lMxHxL2xn2r0fpNRX7nEiQ","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2023-06-05T11:30:37.6272305+08:00","Properties":{}}
+DEBUG 2023-06-05 11:30:37,669 [36   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: lMxHxL2xn2r0fpNRX7nEiQ
+INFO  2023-06-05 11:30:37,674 [29   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (81ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE [a].[IsAbandoned] = CAST(0 AS bit) AND [a].[NextTryTime] <= @__Now_0
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+DEBUG 2023-06-05 11:30:38,632 [30   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: lMxHxL2xn2r0fpNRX7nEiQ
+INFO  2023-06-05 11:30:38,698 [30   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2023-06-05 11:30:38,722 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=lMxHxL2xn2r0fpNRX7nEiQ - - - 101 - - 1791.0012ms

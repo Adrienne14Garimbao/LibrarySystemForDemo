@@ -47,7 +47,6 @@
     <Folder Include="wwwroot\view-resources\Views\Category\" />
     <Folder Include="wwwroot\view-resources\Views\Author\" />
     <Folder Include="wwwroot\view-resources\Views\Book\" />
-    <Folder Include="wwwroot\view-resources\Views\Student\" />
     <Folder Include="wwwroot\view-resources\Views\_Bundles\" />
   </ItemGroup>
 </Project>
