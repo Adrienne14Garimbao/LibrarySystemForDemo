@@ -4,6 +4,7 @@ using LibrarySystemForDemo.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LibrarySystemForDemo.Migrations
 {
     [DbContext(typeof(LibrarySystemForDemoDbContext))]
-    partial class LibrarySystemForDemoDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230605014645_Added_Books_Table")]
+    partial class Added_Books_Table
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

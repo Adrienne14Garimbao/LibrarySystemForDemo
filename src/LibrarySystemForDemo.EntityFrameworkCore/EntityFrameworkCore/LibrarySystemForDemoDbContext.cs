@@ -4,6 +4,7 @@ using LibrarySystemForDemo.Authorization.Roles;
 using LibrarySystemForDemo.Authorization.Users;
 using LibrarySystemForDemo.MultiTenancy;
 using LibrarySystemForDemo.Entities;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace LibrarySystemForDemo.EntityFrameworkCore
 {
@@ -31,6 +32,12 @@ namespace LibrarySystemForDemo.EntityFrameworkCore
         public DbSet<Department> Departments { get; set; }
 
         public DbSet<Student> Students { get; set; }
+
+        public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Author> Authors { get; set; }
+
+        public DbSet<Book> Books { get; set; }
 
 
 
