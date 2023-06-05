@@ -18,13 +18,15 @@ namespace LibrarySystemForDemo.EntityFrameworkCore
         }
 
         /* Note:  
+        * Don't forget to;
         * 
-        * Don't forget to run 'add-migration' Then > 'update-database' 
-        * In Package Console Manager
-        * 
-        * and 
-        * 
-             using LibrarySystemForDemo.Entities;
+          1. include using LibrarySystemForDemo.Entities; in DBContext
+          2. run 'add-migration' Then > 'update-database' in Package Console Manager
+         
+        * and
+        
+          3. Inject this in your entities 
+             
             : FullAuditedEntity<int>  
         * 
         */
@@ -39,7 +41,7 @@ namespace LibrarySystemForDemo.EntityFrameworkCore
 
         public DbSet<Book> Books { get; set; }
 
-
+        public DbSet<Borrower> Borrowers { get; set; } 
 
     }
 }
