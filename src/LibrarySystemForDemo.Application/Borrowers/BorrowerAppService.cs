@@ -15,11 +15,12 @@ namespace LibrarySystemForDemo.Borrowers
 {
     public class BorrowerAppService : AsyncCrudAppService<Borrower, BorrowerDto, int, PagedBorrowerResultRequestDto, CreateBorrowerDto, BorrowerDto>, IBorrowerAppService
     {
-
+        #region Repository
         private readonly IRepository<Borrower, int> _repository;
 
         private readonly IRepository<Book, int> _bookRepository;
         private readonly IRepository<Student, int> _studentRepository;
+        #endregion
 
         public BorrowerAppService(IRepository<Borrower, int> repository, IRepository<Book> bookRepository, IRepository<Student> studentRepository) : base(repository)
         {
@@ -28,6 +29,7 @@ namespace LibrarySystemForDemo.Borrowers
             _studentRepository = studentRepository;
         }
 
+        #region Generated Override
         public override Task<BorrowerDto> CreateAsync(CreateBorrowerDto input)
         {
             return base.CreateAsync(input);
@@ -57,7 +59,9 @@ namespace LibrarySystemForDemo.Borrowers
         {
             return base.GetEntityByIdAsync(id);
         }
+        #endregion
 
+        #region Get all Borrowers togerther with Books and Students
         public async Task<PagedResultDto<BorrowerDto>> GetAllBorrowerWithBooksAndStudent(PagedBookResultRequestDto input)
         {
             var query = await _repository.GetAll()
@@ -69,6 +73,7 @@ namespace LibrarySystemForDemo.Borrowers
             return new PagedResultDto<BorrowerDto>(query.Count(), query);
 
         }
+        #endregion
 
 
     }

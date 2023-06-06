@@ -18,10 +18,12 @@ namespace LibrarySystemForDemo.Web.Controllers
 {
     public class BorrowerController : LibrarySystemForDemoControllerBase
     {
+        #region Interface Injection
         private IBorrowerAppService _borrowerAppService;
 
         private IBookAppService _bookAppService;
         private IStudentAppService _studentAppService;
+        #endregion
 
         public BorrowerController(IBorrowerAppService borrowerAppService, IBookAppService bookAppService, IStudentAppService studentAppService)
         {
@@ -32,10 +34,12 @@ namespace LibrarySystemForDemo.Web.Controllers
 
         public async Task<IActionResult> Index(string searchBorrower)
         {
+            #region Variable
             var model = new BorrowerListViewModel();
-
             var borrower = await _borrowerAppService.GetAllAsync(new PagedBorrowerResultRequestDto { MaxResultCount = int.MaxValue });
+            #endregion
 
+            #region Search
             if (!string.IsNullOrEmpty(searchBorrower))
             {
                 model = new BorrowerListViewModel()
@@ -52,17 +56,17 @@ namespace LibrarySystemForDemo.Web.Controllers
             }
 
             return View(model);
-
+            #endregion
         }
 
         public async Task<IActionResult> CreateOrEdit(int? id)
         {
-
+            #region Variable
             var model = new CreateOrEditBorrowerListViewModel();
 
             var modelBook = await _bookAppService.GetAllAsync(new PagedBookResultRequestDto { MaxResultCount = int.MaxValue });
             var modelStudent = await _studentAppService.GetAllAsync(new PagedStudentResultRequestDto { MaxResultCount = int.MaxValue });
-            
+            #endregion
 
             if (id.HasValue)
             {

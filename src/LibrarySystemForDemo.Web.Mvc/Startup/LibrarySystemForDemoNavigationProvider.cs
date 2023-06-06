@@ -14,7 +14,7 @@ namespace LibrarySystemForDemo.Web.Startup
         {
             context.Manager.MainMenu
 
-
+                #region Home
                 .AddItem(
                     new MenuItemDefinition(
                         PageNames.Home,
@@ -24,8 +24,9 @@ namespace LibrarySystemForDemo.Web.Startup
                         requiresAuthentication: true
                     )
                 )
+                #endregion
 
-                /*   Departments   */
+                #region Departments
                 .AddItem(
                     new MenuItemDefinition(
                         PageNames.Departments,
@@ -35,9 +36,9 @@ namespace LibrarySystemForDemo.Web.Startup
                         requiresAuthentication: true
                     )
                 )
-                /*   Departments   */
+            #endregion
 
-                /*   Students   */
+                #region  Students
                 .AddItem(
                     new MenuItemDefinition(
                         PageNames.Students,
@@ -47,9 +48,9 @@ namespace LibrarySystemForDemo.Web.Startup
                         requiresAuthentication: true
                     )
                 )
-                /*   Students   */
+            #endregion
 
-                /*   Book Category   */
+                #region Book Category   
                 .AddItem(
                     new MenuItemDefinition(
                         PageNames.BookCategories,
@@ -59,9 +60,9 @@ namespace LibrarySystemForDemo.Web.Startup
                         requiresAuthentication: true
                     )
                 )
-                /*   Book Category   */
+                #endregion
 
-                /*      Authors        */
+                #region Authors
                 .AddItem(
                     new MenuItemDefinition(
                         PageNames.Authors,
@@ -71,9 +72,9 @@ namespace LibrarySystemForDemo.Web.Startup
                         requiresAuthentication: true
                     )
                 )
-                /*      Authors       */
+                #endregion
 
-                /*      Books        */
+                #region Books
                 .AddItem(
                     new MenuItemDefinition(
                         PageNames.Books,
@@ -83,9 +84,9 @@ namespace LibrarySystemForDemo.Web.Startup
                         requiresAuthentication: true
                     )
                 )
-                /*      Books       */
+                #endregion
 
-                /*      Borrower        */
+                #region Borrower
                 .AddItem(
                     new MenuItemDefinition(
                         PageNames.Borrowers,
@@ -95,10 +96,9 @@ namespace LibrarySystemForDemo.Web.Startup
                         requiresAuthentication: true
                     )
                 )
+            #endregion
 
-                /*      Borrower       */
-
-                /*      About Developer       */
+                #region About
                 .AddItem(
                     new MenuItemDefinition(
                         PageNames.About,
@@ -107,10 +107,9 @@ namespace LibrarySystemForDemo.Web.Startup
                         icon: "fas fa-info-circle"
                     )
                 );
-                /*      About Developer       */
+            #endregion
 
-                /*  ; */
-
+                #region Commented Codes
                 //.AddItem(
                 //    new MenuItemDefinition(
                 //        PageNames.Tenants,
@@ -140,6 +139,7 @@ namespace LibrarySystemForDemo.Web.Startup
                 //        permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Roles)
                 //    )
                 //);
+                #endregion
 
         }
 

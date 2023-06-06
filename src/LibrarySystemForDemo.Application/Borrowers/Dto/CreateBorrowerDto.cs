@@ -9,9 +9,10 @@ using System.Threading.Tasks;
 
 namespace LibrarySystemForDemo.Borrowers.Dto
 {
-
+    #region Mapping
     [AutoMapFrom(typeof(Borrower))]
     [AutoMapTo(typeof(Borrower))]
+    #endregion
 
     public class CreateBorrowerDto : EntityDto<int>
     {

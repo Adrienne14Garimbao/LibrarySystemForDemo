@@ -117,44 +117,55 @@
     <text name="ResetPasswordStepOneInfo">1. Enter your administrator password</text>
     <text name="ResetPasswordStepTwoInfo">2. Copy this random password so you can send it to the user</text>
     <text name="UsersActivation">Users activation</text>
-	  
+
+    <!-- #region About Developer -->
     <text name="AFG">Adrienne Fortin Garimbao</text>
     <text name="AboutDeveloper">About Developer</text>
-	  
+    <!-- #endregion About Developer -->
+
+    <!-- #region Department -->
     <text name="Departments">Departments</text>
     <text name="DepartmentId">Department ID</text>
     <text name="DepartmentName">Department Name</text>
+    <!-- #endregion Department -->
 
+    <!-- #region Student -->
     <text name="Students">Students</text>
     <text name="StudentId">Student ID</text>
     <text name="StudentName">Student Name</text>
     <text name="StudentContactNumber">Contact Number</text>
     <text name="StudentEmail">Email</text>
+    <!-- #endregion Student -->
 
+    <!-- #region Book -->
     <text name="Books">Books</text>
     <text name="BookId">Book ID</text>
-
     <text name="BookTitle">Title</text>
     <text name="BookPublisher">Publisher</text>
     <text name="BookAuthor">Author</text>
-	  
-	  
+    <!-- #endregion Book -->
+
+    <!-- #region Category -->
     <text name="Category">Category</text>
     <text name="CategoryId">Category ID</text>
     <text name="CategoryName">Category Name</text>
     <text name="BookCategories">Book Categories</text>
+    <!-- #endregion Category -->
 
+    <!-- #region Author -->
     <text name="AuthorsId">Authors ID</text>
     <text name="AuthorsName">Authors Name</text>
     <text name="Author">Authors</text>
+    <!-- #endregion Author -->
 
-
+    <!-- #region Borrower -->
     <text name="Borrower">Borrowers</text>
     <text name="BorrowerID">Borrowers ID</text>
     <text name="IsBorrowed">Status</text>
     <text name="BorrowDate">Date Borrowed</text>
     <text name="ExpectedReturnDate">Expected Date of Return</text>
     <text name="ReturnDate">Date Returned</text>
+    <!-- #endregion Borrower -->
 	  
 	  
 	  

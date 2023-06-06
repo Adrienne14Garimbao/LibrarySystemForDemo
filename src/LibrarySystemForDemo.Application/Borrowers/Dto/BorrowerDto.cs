@@ -11,9 +11,11 @@ using System.Threading.Tasks;
 
 namespace LibrarySystemForDemo.Borrowers.Dto
 {
-
+    #region Mapping
     [AutoMapFrom(typeof(Borrower))]
     [AutoMapTo(typeof(Borrower))]
+    #endregion 
+
     public class BorrowerDto : EntityDto<int>
     {
         public DateTime BorrowDate { get; set; }
