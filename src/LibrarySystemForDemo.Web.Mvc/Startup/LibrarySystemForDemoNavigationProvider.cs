@@ -15,16 +15,6 @@ namespace LibrarySystemForDemo.Web.Startup
             context.Manager.MainMenu
 
 
-
-                //.AddItem(
-                //    new MenuItemDefinition(
-                //        PageNames.About,
-                //        L("About"),
-                //        url: "About",
-                //        icon: "fas fa-info-circle"
-                //    )
-                //)
-
                 .AddItem(
                     new MenuItemDefinition(
                         PageNames.Home,
@@ -104,10 +94,22 @@ namespace LibrarySystemForDemo.Web.Startup
                         icon: "fas fa-hand-holding",
                         requiresAuthentication: true
                     )
-                );
+                )
+
                 /*      Borrower       */
 
-                /*  ; */    
+                /*      About Developer       */
+                .AddItem(
+                    new MenuItemDefinition(
+                        PageNames.About,
+                        L("About"),
+                        url: "About",
+                        icon: "fas fa-info-circle"
+                    )
+                );
+                /*      About Developer       */
+
+                /*  ; */
 
                 //.AddItem(
                 //    new MenuItemDefinition(
@@ -118,7 +120,7 @@ namespace LibrarySystemForDemo.Web.Startup
                 //        permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Tenants)
                 //    )
                 //)
-                
+
                 //.AddItem(
                 //    new MenuItemDefinition(
                 //        PageNames.Users,
@@ -138,7 +140,7 @@ namespace LibrarySystemForDemo.Web.Startup
                 //        permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Roles)
                 //    )
                 //);
-                
+
         }
 
         private static ILocalizableString L(string name)
