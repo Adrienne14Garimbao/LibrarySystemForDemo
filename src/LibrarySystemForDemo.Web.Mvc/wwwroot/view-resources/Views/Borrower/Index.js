@@ -1,15 +1,11 @@
 ﻿// #region Jquery for Borrower > Index
 (function ($) {
 
-    // #region Variable
-
     var _borrowerAppService = abp.services.app.borrower,
         l = abp.localization.getSource('LibrarySystemForDemo'),
         _$form = $('form[name=borrowerSearchForm]');
-    // #endregion
 
     // #region Search Borrower  
-
     _$form.find('.btn-search').on('click', (e) => {
         window.location.href = "/Borrower/Index";
 

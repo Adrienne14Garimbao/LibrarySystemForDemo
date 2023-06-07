@@ -125,20 +125,23 @@
 
     <!-- #region Department -->
     <text name="Departments">Departments</text>
+    <text name="CreateDepartments">Add Departments</text>
     <text name="DepartmentId">Department ID</text>
-    <text name="DepartmentName">Department Name</text>
+    <text name="DepartmentName">Name</text>
     <!-- #endregion Department -->
 
     <!-- #region Student -->
     <text name="Students">Students</text>
+    <text name="CreateStudents">Add Students</text>
     <text name="StudentId">Student ID</text>
-    <text name="StudentName">Student Name</text>
+    <text name="StudentName">Name</text>
     <text name="StudentContactNumber">Contact Number</text>
     <text name="StudentEmail">Email</text>
     <!-- #endregion Student -->
 
     <!-- #region Book -->
     <text name="Books">Books</text>
+    <text name="CreateBooks">Add Books</text>
     <text name="BookId">Book ID</text>
     <text name="BookTitle">Title</text>
     <text name="BookPublisher">Publisher</text>
@@ -147,19 +150,22 @@
 
     <!-- #region Category -->
     <text name="Category">Category</text>
+    <text name="CreateCategory">Add Category</text>
     <text name="CategoryId">Category ID</text>
-    <text name="CategoryName">Category Name</text>
+    <text name="CategoryName">Category</text>
     <text name="BookCategories">Book Categories</text>
     <!-- #endregion Category -->
 
     <!-- #region Author -->
     <text name="AuthorsId">Authors ID</text>
-    <text name="AuthorsName">Authors Name</text>
+    <text name="AuthorsName">Name</text>
     <text name="Author">Authors</text>
+    <text name="CreateAuthor">Add Authors</text>
     <!-- #endregion Author -->
 
     <!-- #region Borrower -->
     <text name="Borrower">Borrowers</text>
+    <text name="CreateBorrower">Add Borrowers</text>
     <text name="BorrowerID">Borrowers ID</text>
     <text name="IsBorrowed">Status</text>
     <text name="BorrowDate">Date Borrowed</text>

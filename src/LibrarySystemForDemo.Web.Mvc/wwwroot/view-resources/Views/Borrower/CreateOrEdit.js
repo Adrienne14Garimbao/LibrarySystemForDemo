@@ -82,6 +82,18 @@
     }
     // #endregion
 
+    // #region currentDate() -  today's date
+    function currentDate()
+    {
+        var today = DateTime.Today.Date;
+
+        var date = Date.now();
+        currentDate = date.format('D/MM/YYYY');
+
+    }
+    // #endregion
+
+
 })(jQuery);
 
 

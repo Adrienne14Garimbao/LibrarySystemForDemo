@@ -11,6 +11,7 @@ using LibrarySystemForDemo.Students.Dto;
 using LibrarySystemForDemo.Web.Models.Books;
 using LibrarySystemForDemo.Web.Models.Borrowers;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Linq; /* <<< Don't forget to add this */
 using System.Threading.Tasks; /* <<< Don't forget to add this too */
 
@@ -18,19 +19,20 @@ namespace LibrarySystemForDemo.Web.Controllers
 {
     public class BorrowerController : LibrarySystemForDemoControllerBase
     {
+
         #region Interface Injection
         private IBorrowerAppService _borrowerAppService;
 
         private IBookAppService _bookAppService;
         private IStudentAppService _studentAppService;
-        #endregion
-
+        
         public BorrowerController(IBorrowerAppService borrowerAppService, IBookAppService bookAppService, IStudentAppService studentAppService)
         {
             _borrowerAppService = borrowerAppService;
             _bookAppService = bookAppService;
             _studentAppService = studentAppService;
         }
+        #endregion 
 
         #region Index
         public async Task<IActionResult> Index(string searchBorrower)
@@ -43,7 +45,7 @@ namespace LibrarySystemForDemo.Web.Controllers
             #region Search
             if (!string.IsNullOrEmpty(searchBorrower))
             {
-                #region If Not Empty
+                #region If not empty
                 model = new BorrowerListViewModel()
                 {
                     Borrowers = borrower.Items.Where(h => h.Student.StudentName.Contains(searchBorrower) || h.Books.BookTitle.Contains(searchBorrower)   ).ToList()
@@ -52,7 +54,7 @@ namespace LibrarySystemForDemo.Web.Controllers
             }
             else
             {
-                #region If Empty textbox
+                #region If textbox is empty
                 model = new BorrowerListViewModel()
                 {
                     Borrowers = borrower.Items.ToList()
@@ -67,7 +69,7 @@ namespace LibrarySystemForDemo.Web.Controllers
         #endregion
 
         #region Create or Edit
-        public async Task<IActionResult> CreateOrEdit(int? id)
+        public async Task<IActionResult> CreateOrEdit(int? id) //DateTime dateToday
         {
             #region Variable
             var model = new CreateOrEditBorrowerListViewModel();
@@ -84,8 +86,8 @@ namespace LibrarySystemForDemo.Web.Controllers
                     Id = borrower.Id,
                     StudentId = borrower.Id,
                     BookId = borrower.Id,
-                    BorrowDate = borrower.BorrowDate,
-                    ExpectedReturnDate = borrower.ExpectedReturnDate,
+                    BorrowDate = borrower.BorrowDate, //BorrowDate should be default to today's date
+                    ExpectedReturnDate = borrower.ExpectedReturnDate, //ExpectedReturnDate should auto-populate 7 days after the BorrowDate
                     ReturnDate = borrower.ReturnDate
                     
                 };

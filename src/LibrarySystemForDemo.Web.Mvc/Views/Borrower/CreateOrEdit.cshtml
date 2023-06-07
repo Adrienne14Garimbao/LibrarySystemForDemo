@@ -3,18 +3,26 @@
 *@
 
 @using LibrarySystemForDemo.Web.Models.Borrowers;
+@using LibrarySystemForDemo.Web.Startup
+
 
 @model CreateOrEditBorrowerListViewModel;
 
 
 @section scripts
-    {
+{
     <environment names="Development">
         <script src="~/view-resources/Views/Borrower/CreateOrEdit.js" asp-append-version="true"></script>
     </environment>
 
 }
 
+@{
+    var today = DateTime.Now;
+
+    ViewBag.Title = "Add Borrower";
+
+}
 
 <section class="content">
     <div class="container-fluid">
@@ -27,8 +35,6 @@
                         <form name="BorrowerForm" role="form" class="form-horizontal">
 
                             <input type="hidden" name="Id" value="@Model?.Id" />
-
-
 
                             <div class="row">
 
@@ -53,9 +59,18 @@
                                     Text = d.BookTitle
                                     }), "Select Book", new {@class = "form-control"})
 
-                                    <label for="ExpectedReturnDate">Expected Date of Return</label>
-                                    <input class="form-control" type="datetime-local" data-val="true" required id="ExpectedReturnDate" name="ExpectedReturnDate" value="@Model?.ExpectedReturnDate">
+                                    <label>IT SHOULD BE DATE TODAY: @today</label> <br>
+                                    <label for="BorrowDate">Date of Borrow </label>                                                                                    @*value="@today  or @DateTime.Now  *@
+                                    <input class="form-control" type="date" data-date-of-borrow="@Model?.BorrowDate" required id="BorrowDate" name="BorrowDate" value="@Model?.BorrowDate" />
+                                    
 
+                                    <label for="ExpectedReturnDate">Expected Date of Return </label>
+                                    <input class="form-control today" type="date" data-expected-date-of-today="@Model?.ExpectedReturnDate" required id="ExpectedReturnDate" name="ExpectedReturnDate" value="@Model?.ExpectedReturnDate" />
+
+                                    <label for="ReturnDate">Date of Return</label>
+                                    <input class="form-control" type="date" data-expected-date-of-today="@Model?.ReturnDate" data-val ="true" id="ReturnDate" name="ReturnDate" value="@Model?.ReturnDate">
+
+                                    
 
                                 </div>
 
