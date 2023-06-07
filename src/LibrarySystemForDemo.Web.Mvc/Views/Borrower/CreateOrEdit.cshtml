@@ -28,6 +28,8 @@
 
                             <input type="hidden" name="Id" value="@Model?.Id" />
 
+
+
                             <div class="row">
 
                                 <div class="form-group">
@@ -51,8 +53,8 @@
                                     Text = d.BookTitle
                                     }), "Select Book", new {@class = "form-control"})
 
-                                    @* Find some code for datepicker  *@
-                                    <label for="expectedReturnDate">Expected Return Date</label>
+                                    <label for="ExpectedReturnDate">Expected Date of Return</label>
+                                    <input class="form-control" type="datetime-local" data-val="true" required id="ExpectedReturnDate" name="ExpectedReturnDate" value="@Model?.ExpectedReturnDate">
 
 
                                 </div>

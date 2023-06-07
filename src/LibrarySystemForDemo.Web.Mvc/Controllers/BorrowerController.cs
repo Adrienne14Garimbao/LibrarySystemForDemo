@@ -32,6 +32,7 @@ namespace LibrarySystemForDemo.Web.Controllers
             _studentAppService = studentAppService;
         }
 
+        #region Index
         public async Task<IActionResult> Index(string searchBorrower)
         {
             #region Variable
@@ -42,23 +43,30 @@ namespace LibrarySystemForDemo.Web.Controllers
             #region Search
             if (!string.IsNullOrEmpty(searchBorrower))
             {
+                #region If Not Empty
                 model = new BorrowerListViewModel()
                 {
                     Borrowers = borrower.Items.Where(h => h.Student.StudentName.Contains(searchBorrower) || h.Books.BookTitle.Contains(searchBorrower)   ).ToList()
                 };
+                #endregion
             }
             else
             {
+                #region If Empty textbox
                 model = new BorrowerListViewModel()
                 {
                     Borrowers = borrower.Items.ToList()
                 };
+                #endregion
             }
 
-            return View(model);
             #endregion
+            return View(model);
+            
         }
+        #endregion
 
+        #region Create or Edit
         public async Task<IActionResult> CreateOrEdit(int? id)
         {
             #region Variable
@@ -89,6 +97,7 @@ namespace LibrarySystemForDemo.Web.Controllers
             return View(model);
 
         }
+        #endregion
 
 
     }
