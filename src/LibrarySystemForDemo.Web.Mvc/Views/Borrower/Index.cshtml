@@ -91,12 +91,12 @@
                                             <td>@borrower?.ExpectedReturnDate</td>
                                             <td>@borrower?.ReturnDate</td>
 
-                                            <td>@borrower.Books?.IsBorrowed</td>
+                                            <td>@borrower.Books?.IsBorrowed</td>   @*  Dapat 'yes' or 'no' yung display hindi true or false *@
 
 
                                             <td>
 
-                                                <button type="button" class="btn btn-sn bg-secondary edit-borrower" data-borrower-id="@borrower.Id" data-borrower-return-date="@borrower.ReturnDate">
+                                                <button type="button" class="btn btn-sn bg-secondary update-borrower" data-borrower-id="@borrower.Id" data-borrower-return-date="@borrower.ReturnDate">
                                                     <i class="fas fa-pencil-alt"></i> Update
                                                 </button>
 

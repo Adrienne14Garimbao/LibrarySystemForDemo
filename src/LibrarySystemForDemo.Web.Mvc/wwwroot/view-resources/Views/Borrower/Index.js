@@ -13,7 +13,7 @@
     // #endregion
 
     // #region Edit/Update Borrower
-    $(document).on('click', '.edit-borrower', function () {
+    $(document).on('click', '.update-borrower', function () {
 
         var borrowerId = $(this).attr("data-borrower-id");
         var borrowerReturnDate = $(this).attr("data-date-of-return");

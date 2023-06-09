@@ -32,7 +32,7 @@
 
                     <div class="card-body">
 
-                        <form name="BorrowerForm" role="form" class="form-horizontal">
+                        <form name="BorrowerForm" role="form" class="form-horizontal" method="get">
 
                             <input type="hidden" name="Id" value="@Model?.Id" />
 
@@ -62,15 +62,15 @@
                                     <label for="BorrowDate" hidden>Status </label> @*  Hide > IsBorrowed *@
                                     <input class="form-control" hidden type="checkbox" data-borrow-status="@Model.Books?.IsBorrowed" id="IsBorrowed" name="IsBorrowed" value="@Model.Books?.IsBorrowed" />
 
-                                    <label for="BorrowDate">Date of Borrow </label>                                                                                    
-                                    <input class="form-control" type="datetime-local" data-date-of-borrow="@Model?.BorrowDate" required id="BorrowDate" name="BorrowDate" value="@Model?.BorrowDate" />
+                                    <label for="BorrowDate">Date of Borrow </label>           @*  It must be Today > BorrowDate *@
+                                    <input class="form-control" required type="datetime-local" data-date-of-borrow="@Model?.BorrowDate" id="BorrowDate" name="BorrowDate" value="@Model?.BorrowDate" />
                                     
-                                    <label for="ExpectedReturnDate">Expected Date of Return </label>
-                                    <input class="form-control" type="datetime-local" data-expected-date-of-return="@Model?.ExpectedReturnDate" required id="ExpectedReturnDate" name="ExpectedReturnDate" value="@Model?.ExpectedReturnDate" />
+                                    <label for="ExpectedReturnDate">Expected Date of Return </label>  @*  Auto populate ng 7 days > ExpectedReturnDate *@
+                                    <input class="form-control" required type="datetime-local" data-expected-date-of-return="@Model?.ExpectedReturnDate" id="ExpectedReturnDate" name="ExpectedReturnDate" value="@Model?.ExpectedReturnDate" />
 
                                     <label for="ReturnDate" hidden>Date of Return </label>    @*  Hide > Date of Return *@
                                     <input class="form-control" hidden type="datetime-local" data-date-of-return="@Model?.ReturnDate" data-val="true" id="ReturnDate" name="ReturnDate" value="@Model?.ReturnDate">
-
+                                                                                                                 @*  Naka include ba ito ^^^ *@
 
                                 </div>
 
