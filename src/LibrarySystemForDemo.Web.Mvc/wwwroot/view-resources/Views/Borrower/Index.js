@@ -10,12 +10,17 @@
         window.location.href = "/Borrower/Index";
 
     });
-    // #endregion 
+    // #endregion
 
-    // #region Edit Borrower
-    $(document).on('click', '.edit-book', function () {
+    // #region Edit/Update Borrower
+    $(document).on('click', '.edit-borrower', function () {
+
         var borrowerId = $(this).attr("data-borrower-id");
-        window.location.href = "/Borrower/CreateOrEdit/" + borrowerId;
+        var borrowerReturnDate = $(this).attr("data-date-of-return");
+
+        //window.location.href = "/Borrower/CreateOrEdit/" + borrowerId;
+
+        window.location.href = "/Borrower/CreateOrEdit/" + borrowerId + borrowerReturnDate;
 
     });
     // #endregion

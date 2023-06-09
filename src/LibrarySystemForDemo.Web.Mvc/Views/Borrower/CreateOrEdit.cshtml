@@ -20,7 +20,7 @@
 @{
     var today = DateTime.Now;
 
-    ViewBag.Title = "Add Borrower";
+    ViewBag.Title = "Borrower";
 
 }
 
@@ -59,18 +59,18 @@
                                     Text = d.BookTitle
                                     }), "Select Book", new {@class = "form-control"})
 
-                                    <label>IT SHOULD BE DATE TODAY: @today</label> <br>
-                                    <label for="BorrowDate">Date of Borrow </label>                                                                                    @*value="@today  or @DateTime.Now  *@
-                                    <input class="form-control" type="date" data-date-of-borrow="@Model?.BorrowDate" required id="BorrowDate" name="BorrowDate" value="@Model?.BorrowDate" />
-                                    
+                                    <label for="BorrowDate" hidden>Status </label> @*  Hide > IsBorrowed *@
+                                    <input class="form-control" hidden type="checkbox" data-borrow-status="@Model.Books?.IsBorrowed" id="IsBorrowed" name="IsBorrowed" value="@Model.Books?.IsBorrowed" />
 
+                                    <label for="BorrowDate">Date of Borrow </label>                                                                                    
+                                    <input class="form-control" type="datetime-local" data-date-of-borrow="@Model?.BorrowDate" required id="BorrowDate" name="BorrowDate" value="@Model?.BorrowDate" />
+                                    
                                     <label for="ExpectedReturnDate">Expected Date of Return </label>
-                                    <input class="form-control today" type="date" data-expected-date-of-today="@Model?.ExpectedReturnDate" required id="ExpectedReturnDate" name="ExpectedReturnDate" value="@Model?.ExpectedReturnDate" />
+                                    <input class="form-control" type="datetime-local" data-expected-date-of-return="@Model?.ExpectedReturnDate" required id="ExpectedReturnDate" name="ExpectedReturnDate" value="@Model?.ExpectedReturnDate" />
 
-                                    <label for="ReturnDate">Date of Return</label>
-                                    <input class="form-control" type="date" data-expected-date-of-today="@Model?.ReturnDate" data-val ="true" id="ReturnDate" name="ReturnDate" value="@Model?.ReturnDate">
+                                    <label for="ReturnDate" hidden>Date of Return </label>    @*  Hide > Date of Return *@
+                                    <input class="form-control" hidden type="datetime-local" data-date-of-return="@Model?.ReturnDate" data-val="true" id="ReturnDate" name="ReturnDate" value="@Model?.ReturnDate">
 
-                                    
 
                                 </div>
 

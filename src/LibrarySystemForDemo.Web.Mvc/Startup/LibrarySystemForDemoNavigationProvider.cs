@@ -14,13 +14,13 @@ namespace LibrarySystemForDemo.Web.Startup
         {
             context.Manager.MainMenu
 
-                #region Home
+                #region Home / Library System
                 .AddItem(
                     new MenuItemDefinition(
                         PageNames.Home,
-                        L("HomePage"),
+                        L("LibrarySystem"),
                         url: "",
-                        icon: "fas fa-home",
+                        icon: "fas fa-book-open",
                         requiresAuthentication: true
                     )
                 )

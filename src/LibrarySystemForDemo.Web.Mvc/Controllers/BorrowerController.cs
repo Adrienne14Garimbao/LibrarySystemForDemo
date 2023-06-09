@@ -84,12 +84,12 @@ namespace LibrarySystemForDemo.Web.Controllers
                 model = new CreateOrEditBorrowerListViewModel()
                 {
                     Id = borrower.Id,
-                    StudentId = borrower.Id,
-                    BookId = borrower.Id,
-                    BorrowDate = borrower.BorrowDate, //BorrowDate should be default to today's date
-                    ExpectedReturnDate = borrower.ExpectedReturnDate, //ExpectedReturnDate should auto-populate 7 days after the BorrowDate
-                    ReturnDate = borrower.ReturnDate
-                    
+                    StudentId = borrower.Id,            // *The Student can borrow multipe books but the Book should only be available to one Student
+                    BookId = borrower.Id,               // *The Book should not be listed to the dropdown if the book is already borrowed
+                    BorrowDate = borrower.BorrowDate,                   // *BorrowDate should be default to today's date
+                    ExpectedReturnDate = borrower.ExpectedReturnDate,   // * ExpectedReturnDate should auto-populate 7 days after the BorrowDate
+                    ReturnDate = borrower.ReturnDate    // *If the record is already updated as Returned, the Update/Delete buttons should be disabled
+
                 };
             }
 

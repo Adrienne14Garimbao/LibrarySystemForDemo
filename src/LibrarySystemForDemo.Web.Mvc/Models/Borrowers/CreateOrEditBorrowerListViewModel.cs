@@ -15,7 +15,7 @@ namespace LibrarySystemForDemo.Web.Models.Borrowers
 
         public DateTime ExpectedReturnDate { get; set; }
 
-        public DateTime ReturnDate { get; set; }
+        public DateTime? ReturnDate { get; set; } /* <<<< I convert it into nullable */
 
         public int BookId { get; set; }
 

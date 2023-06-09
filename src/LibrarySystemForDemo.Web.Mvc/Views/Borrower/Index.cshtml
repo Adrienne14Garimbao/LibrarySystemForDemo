@@ -71,6 +71,8 @@
                                         <th>@L("ExpectedReturnDate")</th>
                                         <th>@L("ReturnDate")</th>
 
+                                        <th>@L("IsBorrowed")</th>
+
 
                                         <th style="width: 150px">@L("Actions")</th>
                                     </tr>
@@ -89,15 +91,20 @@
                                             <td>@borrower?.ExpectedReturnDate</td>
                                             <td>@borrower?.ReturnDate</td>
 
+                                            <td>@borrower.Books?.IsBorrowed</td>
+
 
                                             <td>
-                                                <button type="button" class="btn btn-sn bg-secondary edit-borrower" data-book-id="@borrower.Id">
-                                                    <i class="fas fa-pencil-alt"></i> Edit
+
+                                                <button type="button" class="btn btn-sn bg-secondary edit-borrower" data-borrower-id="@borrower.Id" data-borrower-return-date="@borrower.ReturnDate">
+                                                    <i class="fas fa-pencil-alt"></i> Update
                                                 </button>
 
-                                                <button type="button" class="btn btn-sn btn-danger delete-borrower" data-book-id="@borrower.Id" data-borrower-name="@borrower.Student">
-                                                    <i class="fas fa-trash"></i> Delete
+                                                <button type="button" class="btn btn-sn btn-danger delete-borrower" data-borrower-id="@borrower.Id" data-borrower-name="@borrower.Student">
+                                                    <i class="fas fa-trash"></i> Delete @* << If Hindi Return pa dapat naka disable pa ito*@
                                                 </button>
+
+
                                             </td>
                                         </tr>
                                     }

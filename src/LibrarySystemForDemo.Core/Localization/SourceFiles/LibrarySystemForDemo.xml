@@ -121,6 +121,8 @@
     <!-- #region About Developer -->
     <text name="AFG">Adrienne Fortin Garimbao</text>
     <text name="AboutDeveloper">About Developer</text>
+    <text name="StartHere">Start</text>
+    <text name="LibrarySystem">Library System</text>
     <!-- #endregion About Developer -->
 
     <!-- #region Department -->
@@ -167,10 +169,11 @@
     <text name="Borrower">Borrowers</text>
     <text name="CreateBorrower">Add Borrowers</text>
     <text name="BorrowerID">Borrowers ID</text>
-    <text name="IsBorrowed">Status</text>
+    <text name="IsBorrowed">Returned Status</text>
     <text name="BorrowDate">Date Borrowed</text>
     <text name="ExpectedReturnDate">Expected Date of Return</text>
     <text name="ReturnDate">Date Returned</text>
+    <text name="Return">Return</text>
     <!-- #endregion Borrower -->
 	  
 	  
