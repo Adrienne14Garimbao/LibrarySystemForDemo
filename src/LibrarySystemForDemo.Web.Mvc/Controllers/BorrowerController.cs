@@ -39,7 +39,7 @@ namespace LibrarySystemForDemo.Web.Controllers
         {
             #region Variable
             var model = new BorrowerListViewModel();
-            var borrower = await _borrowerAppService.GetAllAsync(new PagedBorrowerResultRequestDto { MaxResultCount = int.MaxValue });
+            var getAllBorrowerWithBooksAndStudent = await _borrowerAppService.GetAllBorrowerWithBooksAndStudent(new PagedBorrowerResultRequestDto { MaxResultCount = int.MaxValue });
             #endregion
 
             #region Search
@@ -48,7 +48,7 @@ namespace LibrarySystemForDemo.Web.Controllers
                 #region If not empty
                 model = new BorrowerListViewModel()
                 {
-                    Borrowers = borrower.Items.Where(h => h.Student.StudentName.Contains(searchBorrower) || h.Books.BookTitle.Contains(searchBorrower)   ).ToList()
+                    Borrowers = getAllBorrowerWithBooksAndStudent.Items.Where(h => h.Student.StudentName.Contains(searchBorrower) || h.Books.BookTitle.Contains(searchBorrower) ).ToList()
                 };
                 #endregion
             }
@@ -57,7 +57,7 @@ namespace LibrarySystemForDemo.Web.Controllers
                 #region If textbox is empty
                 model = new BorrowerListViewModel()
                 {
-                    Borrowers = borrower.Items.ToList()
+                    Borrowers = getAllBorrowerWithBooksAndStudent.Items.ToList()
                 };
                 #endregion
             }
@@ -69,32 +69,34 @@ namespace LibrarySystemForDemo.Web.Controllers
         #endregion
 
         #region Create or Edit
-        public async Task<IActionResult> CreateOrEdit(int? id) //DateTime dateToday
+        public async Task<IActionResult> CreateBorrower(int? id) 
         {
-            #region Variable
+            #region Variable Declaration 
             var model = new CreateOrEditBorrowerListViewModel();
 
-            var modelBook = await _bookAppService.GetAllAsync(new PagedBookResultRequestDto { MaxResultCount = int.MaxValue });
-            var modelStudent = await _studentAppService.GetAllAsync(new PagedStudentResultRequestDto { MaxResultCount = int.MaxValue });
+            var getAllBook = await _bookAppService.GetAllAsync(new PagedBookResultRequestDto { MaxResultCount = int.MaxValue });
+            var getAllStudent = await _studentAppService.GetAllAsync(new PagedStudentResultRequestDto { MaxResultCount = int.MaxValue });
             #endregion
 
-            if (id.HasValue)
-            {
-                var borrower = await _borrowerAppService.GetAsync(new EntityDto<int>(id.Value));
-                model = new CreateOrEditBorrowerListViewModel()
-                {
-                    Id = borrower.Id,
-                    StudentId = borrower.Id,            // *The Student can borrow multipe books but the Book should only be available to one Student
-                    BookId = borrower.Id,               // *The Book should not be listed to the dropdown if the book is already borrowed
-                    BorrowDate = borrower.BorrowDate,                   // *BorrowDate should be default to today's date
-                    ExpectedReturnDate = borrower.ExpectedReturnDate,   // * ExpectedReturnDate should auto-populate 7 days after the BorrowDate
-                    ReturnDate = borrower.ReturnDate    // *If the record is already updated as Returned, the Update/Delete buttons should be disabled
+            //if (id.HasValue)
+            //{
+            //    var createBorrower = await _borrowerAppService.GetAsync(new EntityDto<int>(id.Value));
+            //    model = new CreateOrEditBorrowerListViewModel()
+            //    {
+            //        Id = createBorrower.Id,
+            //        StudentId = createBorrower.Id,            
+            //        BookId = createBorrower.Id,               
+            //        BorrowDate = createBorrower.BorrowDate,                   
+            //        ExpectedReturnDate = createBorrower.ExpectedReturnDate,   
+            //        ReturnDate = createBorrower.ReturnDate,    
+            //        IsBorrowed = (bool)createBorrower.Books.IsBorrowed
+                    
 
-                };
-            }
+            //    };
+            //}
 
-            model.StudentList = modelStudent.Items.ToList();
-            model.BookList = modelBook.Items.ToList();
+            model.StudentList = getAllStudent.Items.ToList();
+            model.BookList = getAllBook.Items.ToList();
 
             return View(model);
 

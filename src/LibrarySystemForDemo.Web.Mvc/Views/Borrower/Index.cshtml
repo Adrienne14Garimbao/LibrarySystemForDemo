@@ -24,7 +24,7 @@
 
         <h1>@L("Borrower")</h1>
 
-        <a class="btn bg-blue float-sm-right" asp-controller="Borrower" asp-action="CreateOrEdit">
+        <a class="btn bg-blue float-sm-right" asp-controller="Borrower" asp-action="CreateBorrower">
             <i class="fa fa-plus-square"></i>
             @L("CreateBorrower")
         </a>
@@ -71,8 +71,6 @@
                                         <th>@L("ExpectedReturnDate")</th>
                                         <th>@L("ReturnDate")</th>
 
-                                        <th>@L("IsBorrowed")</th>
-
 
                                         <th style="width: 150px">@L("Actions")</th>
                                     </tr>
@@ -91,17 +89,15 @@
                                             <td>@borrower?.ExpectedReturnDate</td>
                                             <td>@borrower?.ReturnDate</td>
 
-                                            <td>@borrower.Books?.IsBorrowed</td>   @*  Dapat 'yes' or 'no' yung display hindi true or false *@
-
 
                                             <td>
 
-                                                <button type="button" class="btn btn-sn bg-secondary update-borrower" data-borrower-id="@borrower.Id" data-borrower-return-date="@borrower.ReturnDate">
+                                                <button type="button" class="btn btn-sn bg-secondary update-borrower" data-borrower-id="@borrower.Id" data-borrower-return-date="@borrower.ReturnDate" >
                                                     <i class="fas fa-pencil-alt"></i> Update
                                                 </button>
 
                                                 <button type="button" class="btn btn-sn btn-danger delete-borrower" data-borrower-id="@borrower.Id" data-borrower-name="@borrower.Student">
-                                                    <i class="fas fa-trash"></i> Delete @* << If Hindi Return pa dapat naka disable pa ito*@
+                                                    <i class="fas fa-trash"></i> Delete 
                                                 </button>
 
 

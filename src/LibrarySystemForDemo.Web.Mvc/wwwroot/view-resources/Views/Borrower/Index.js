@@ -5,22 +5,23 @@
         l = abp.localization.getSource('LibrarySystemForDemo'),
         _$form = $('form[name=borrowerSearchForm]');
 
+    var _borrowerIndexPage = "/Borrower/Index",
+        _borrowerPage = "/Borrower"; 
+
     // #region Search Borrower  
     _$form.find('.btn-search').on('click', (e) => {
-        window.location.href = "/Borrower/Index";
+        window.location.href = _borrowerIndexPage;
 
     });
     // #endregion
 
-    // #region Edit/Update Borrower
+    // #region Update Borrower
     $(document).on('click', '.update-borrower', function () {
 
         var borrowerId = $(this).attr("data-borrower-id");
         var borrowerReturnDate = $(this).attr("data-date-of-return");
 
-        //window.location.href = "/Borrower/CreateOrEdit/" + borrowerId;
-
-        window.location.href = "/Borrower/CreateOrEdit/" + borrowerId + borrowerReturnDate;
+        window.location.href = "/Borrower/CreateBorrower/" + borrowerId;
 
     });
     // #endregion
@@ -37,7 +38,7 @@
             function (isConfirmed) {
                 if (isConfirmed) {
                     _borrowerAppService.delete({ id: borrowerId }).done(function () {
-                        window.location.href = "/Borrower"
+                        window.location.href = _borrowerPage
                         abp.notify.info(l('SuccessfullyDeleted'), 'Message');
                     })
                 }
@@ -46,7 +47,7 @@
         );
 
     });
-    // #endregion 
+    // #endregion
 
 
 })(jQuery);

@@ -12,6 +12,6 @@ namespace LibrarySystemForDemo.Borrowers
 {
     public interface IBorrowerAppService : IAsyncCrudAppService<BorrowerDto, int, PagedBorrowerResultRequestDto, CreateBorrowerDto, BorrowerDto>
     {
-        Task<PagedResultDto<BorrowerDto>> GetAllBorrowerWithBooksAndStudent(PagedBookResultRequestDto input);
+        Task<PagedResultDto<BorrowerDto>> GetAllBorrowerWithBooksAndStudent(PagedBorrowerResultRequestDto input);
     }
 }

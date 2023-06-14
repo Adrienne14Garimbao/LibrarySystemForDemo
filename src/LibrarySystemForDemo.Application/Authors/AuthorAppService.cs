@@ -17,6 +17,7 @@ namespace LibrarySystemForDemo.Authors
         {
         }
 
+        #region Default Generated CRUD
         public override Task<AuthorDto> CreateAsync(CreateAuthorDto input)
         {
             return base.CreateAsync(input);
@@ -46,5 +47,6 @@ namespace LibrarySystemForDemo.Authors
         {
             return base.GetEntityByIdAsync(id);
         }
+        #endregion
     }
 }

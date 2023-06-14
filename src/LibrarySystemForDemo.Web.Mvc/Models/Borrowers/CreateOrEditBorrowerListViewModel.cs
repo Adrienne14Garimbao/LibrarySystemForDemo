@@ -9,13 +9,14 @@ namespace LibrarySystemForDemo.Web.Models.Borrowers
     public class CreateOrEditBorrowerListViewModel
     {
         public int Id { get; set; }
-
-        
+ 
         public DateTime BorrowDate { get; set; }
 
         public DateTime ExpectedReturnDate { get; set; }
 
         public DateTime? ReturnDate { get; set; } /* <<<< I convert it into nullable */
+
+        public bool IsBorrowed { get; set; }
 
         public int BookId { get; set; }
 

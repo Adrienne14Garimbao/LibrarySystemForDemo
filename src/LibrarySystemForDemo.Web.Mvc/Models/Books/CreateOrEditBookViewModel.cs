@@ -15,6 +15,8 @@ namespace LibrarySystemForDemo.Web.Models.Books
 
         public int AuthorId { get; set; }
 
+        public bool? IsBorrowed { get; set; }
+
         public Author Author { get; set; }
 
         public int BookCategoryId { get; set; }

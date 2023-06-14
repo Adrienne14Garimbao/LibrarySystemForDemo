@@ -25,6 +25,7 @@ namespace LibrarySystemForDemo.Books
             _authorRepository = authorRepository;
         }
 
+        #region Default Generated CRUD
         public override Task<BookDto> CreateAsync(CreateBookDto input)
         {
             return base.CreateAsync(input);
@@ -54,6 +55,7 @@ namespace LibrarySystemForDemo.Books
         {
             return base.GetEntityByIdAsync(id);
         }
+        #endregion
 
         public async Task<PagedResultDto<BookDto>> GetAllBookWithCategory(PagedBookResultRequestDto input)
         {

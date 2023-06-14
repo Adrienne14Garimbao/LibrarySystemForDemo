@@ -14,7 +14,7 @@ namespace LibrarySystemForDemo.Entities
 
         public DateTime ExpectedReturnDate { get; set; }
 
-        public DateTime ReturnDate { get; set; }
+        public DateTime? ReturnDate { get; set; }
 
         public int? BookId { get; set; }
 

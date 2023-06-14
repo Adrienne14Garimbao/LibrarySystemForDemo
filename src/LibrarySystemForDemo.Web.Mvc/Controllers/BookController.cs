@@ -70,6 +70,7 @@ namespace LibrarySystemForDemo.Web.Controllers
                     AuthorId = book.Id,
                     BookPublisher = book.BookPublisher,
                     BookCategoryId = book.Id,
+                    IsBorrowed = book.IsBorrowed,
                 };
             }
 

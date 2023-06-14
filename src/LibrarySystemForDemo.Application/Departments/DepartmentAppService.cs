@@ -18,6 +18,7 @@ namespace LibrarySystemForDemo.Departments
 
         }
 
+        #region Default Generated CRUD
         public override Task<DepartmentDto> CreateAsync(CreateDepartmentDto input)
         {
             return base.CreateAsync(input);
@@ -47,7 +48,7 @@ namespace LibrarySystemForDemo.Departments
         {
             return base.GetEntityByIdAsync(id);
         }
-
+        #endregion
 
     }
 }

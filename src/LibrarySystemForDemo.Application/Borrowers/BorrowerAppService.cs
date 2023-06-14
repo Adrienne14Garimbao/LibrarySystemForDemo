@@ -15,7 +15,7 @@ namespace LibrarySystemForDemo.Borrowers
 {
     public class BorrowerAppService : AsyncCrudAppService<Borrower, BorrowerDto, int, PagedBorrowerResultRequestDto, CreateBorrowerDto, BorrowerDto>, IBorrowerAppService
     {
-        #region Repository
+        #region IRepository
         private readonly IRepository<Borrower, int> _repository;
 
         private readonly IRepository<Book, int> _bookRepository;
@@ -62,7 +62,7 @@ namespace LibrarySystemForDemo.Borrowers
         #endregion
 
         #region Get all Borrowers togerther with Books and Students
-        public async Task<PagedResultDto<BorrowerDto>> GetAllBorrowerWithBooksAndStudent(PagedBookResultRequestDto input)
+        public async Task<PagedResultDto<BorrowerDto>> GetAllBorrowerWithBooksAndStudent(PagedBorrowerResultRequestDto input)
         {
             var query = await _repository.GetAll()
                 .Include(x => x.Books)

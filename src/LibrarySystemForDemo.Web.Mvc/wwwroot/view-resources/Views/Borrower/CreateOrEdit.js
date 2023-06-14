@@ -6,6 +6,19 @@
         l = abp.localization.getSource('LibrarySystemForDemo'),
         _$form = $('form[name=BorrowerForm]');
 
+    var _borrowerPage = "/Borrower";
+
+    var _BorrowDate = new Date(),
+        _ExpectedReturnDate = new Date();
+
+    _ExpectedReturnDate.setDate(_ExpectedReturnDate.getDate(_BorrowDate) + 7); 
+
+    document.getElementById('BorrowDate').value = _BorrowDate.toISOString().split("T")[0]// ISO format to split date (y/m/d)
+    document.getElementById('ExpectedReturnDate').value = _ExpectedReturnDate.toISOString().split("T")[0]
+
+
+
+
     // #region Save Button 
     
     _$form.find('.save-button').on('click', (e) => {
@@ -64,34 +77,25 @@
     }
     // #endregion
 
-    // #region redirectToBorrowerIndex() - Return to borrower home page 
+    // #region redirectToBorrowerIndex() - Return to borrower page 
     function redirectToBorrowerIndex() {
         abp.notify.info(l('Success'), 'Message');
-        window.location.href = "/Borrower";
+        window.location.href = _borrowerPage;
     }
     // #endregion
 
-    // #region cancelAndReturn() - Cancel and go back to borrower home page
+    // #region cancelAndReturn() - Cancel and go back to borrower page
     function cancelAndReturn() {
         abp.message.confirm('Are you sure you want to cancel?', 'Go Back')
             .then(function (confirmed) {
                 if (confirmed) {
-                    window.location.href = "/Borrower";
+                    window.location.href = _borrowerPage;
                 }
             });
     }
     // #endregion
 
-    // #region currentDate() -  today's date
-    function currentDate()
-    {
-        var today = DateTime.Today.Date;
-
-        var date = Date.now();
-        currentDate = date.format('D/MM/YYYY');
-
-    }
-    // #endregion
+    
 
 
 })(jQuery);

@@ -23,6 +23,8 @@ namespace LibrarySystemForDemo.Students
             _departmentRepository = departmentRepository;
         }
 
+        #region Default Generated CRUD
+
         public override Task<StudentDto> CreateAsync(CreateStudentDto input)
         {
             return base.CreateAsync(input);
@@ -52,6 +54,7 @@ namespace LibrarySystemForDemo.Students
         {
             return base.GetEntityByIdAsync(id);
         }
+        #endregion
 
         public async Task<PagedResultDto<StudentDto>> GetAllStudentWithDepartment(PagedStudentResultRequestDto input)
         {

@@ -1,0 +1,94 @@
+﻿@*
+    For Borrower > Create or Edit
+*@
+
+@using LibrarySystemForDemo.Web.Models.Borrowers;
+@using LibrarySystemForDemo.Web.Startup
+
+
+@model CreateOrEditBorrowerListViewModel;
+
+
+@section scripts
+{
+    <environment names="Development">
+        <script src="~/view-resources/Views/Borrower/CreateOrEdit.js" asp-append-version="true"></script>
+    </environment>
+
+}
+
+@{
+    var today = DateTime.Now;
+
+    ViewBag.Title = "Borrower";
+
+}
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <form name="BorrowerForm" role="form" class="form-horizontal" method="get">
+
+                            <!--  Hidden Element -->
+                            <input type="hidden" name="Id" value="@Model?.Id" />
+                            <input type="hidden" name="IsBorrowed" value="true" id="CreateIsBorrowed" checked />
+                            <!--  Hidden Element -->
+
+                            <div class="row">
+
+                                <div class="form-group">
+
+                                    <label for="studentList">Student List</label>
+                                    @Html.DropDownListFor(
+                                    x => x.Student,
+                                    Model.StudentList.Select(
+                                    d => new SelectListItem {
+                                    Value = d.Id.ToString(),
+                                    Text = d.StudentName
+                                    }), "Select Student", new {@class = "form-control"})
+
+
+                                    <label for="bookList">Book List</label>
+                                    @Html.DropDownListFor(
+                                    x => x.Books,
+                                    Model.BookList.Select(
+                                    d => new SelectListItem {
+                                    Value = d.Id.ToString(),
+                                    Text = d.BookTitle
+                                    }), "Select Book", new {@class = "form-control"})
+
+                                    <label for="BorrowDate">Date of Borrow </label>          
+                                    <input class="form-control" required id="BorrowDate" type="date" data-date-of-borrow="@Model?.BorrowDate" name="BorrowDate" value="@Model?.BorrowDate" />
+                                    
+                                    <label for="ExpectedReturnDate">Expected Date of Return </label> 
+                                    <input class="form-control" required id="ExpectedReturnDate" type="date" data-expected-date-of-return="@Model?.ExpectedReturnDate" name="ExpectedReturnDate" value="@Model?.ExpectedReturnDate" />
+
+                                    <label for="ReturnDate" hidden>Date of Return </label>   
+                                    <input class="form-control" hidden type="date" data-date-of-return="@Model?.ReturnDate" data-val="true" id="ReturnDate" name="ReturnDate" value="@Model?.ReturnDate">
+                                                                                                                
+
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <button type="button" class="btn btn-default cancel-button">@L("Cancel")</button>
+                                <button type="submit" class="btn btn-primary save-button">@L("Save")</button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

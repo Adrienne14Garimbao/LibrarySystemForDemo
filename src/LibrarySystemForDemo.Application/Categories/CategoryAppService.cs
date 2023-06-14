@@ -23,6 +23,7 @@ namespace LibrarySystemForDemo.Categories
             _departmentRepository = departmentRepository;
         }
 
+        #region Default Generated CRUD
         public override Task<CategoryDto> CreateAsync(CreateCategoryDto input)
         {
             return base.CreateAsync(input);
@@ -52,6 +53,7 @@ namespace LibrarySystemForDemo.Categories
         {
             return base.GetEntityByIdAsync(id);
         }
+        #endregion
 
         public async Task<PagedResultDto<CategoryDto>> GetAllCategoryWithDepartment(PagedCategoryResultRequestDto input)
         {

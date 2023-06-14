@@ -169,7 +169,7 @@
     <text name="Borrower">Borrowers</text>
     <text name="CreateBorrower">Add Borrowers</text>
     <text name="BorrowerID">Borrowers ID</text>
-    <text name="IsBorrowed">Returned Status</text>
+    <text name="IsBorrowed">IsBorrowed</text>
     <text name="BorrowDate">Date Borrowed</text>
     <text name="ExpectedReturnDate">Expected Date of Return</text>
     <text name="ReturnDate">Date Returned</text>
