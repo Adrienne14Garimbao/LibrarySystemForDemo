@@ -21,7 +21,7 @@
         var borrowerId = $(this).attr("data-borrower-id");
         var borrowerReturnDate = $(this).attr("data-date-of-return");
 
-        window.location.href = "/Borrower/CreateBorrower/" + borrowerId;
+        window.location.href = "/Borrower/UpdateBorrower/" + borrowerId + borrowerReturnDate;
 
     });
     // #endregion

@@ -22,7 +22,6 @@ namespace LibrarySystemForDemo.Web.Controllers
 
         #region Interface Injection
         private IBorrowerAppService _borrowerAppService;
-
         private IBookAppService _bookAppService;
         private IStudentAppService _studentAppService;
         
@@ -38,8 +37,10 @@ namespace LibrarySystemForDemo.Web.Controllers
         public async Task<IActionResult> Index(string searchBorrower)
         {
             #region Variable
+
             var model = new BorrowerListViewModel();
             var getAllBorrowerWithBooksAndStudent = await _borrowerAppService.GetAllBorrowerWithBooksAndStudent(new PagedBorrowerResultRequestDto { MaxResultCount = int.MaxValue });
+            
             #endregion
 
             #region Search
@@ -63,43 +64,56 @@ namespace LibrarySystemForDemo.Web.Controllers
             }
 
             #endregion
+
             return View(model);
             
         }
         #endregion
 
-        #region Create or Edit
-        public async Task<IActionResult> CreateBorrower(int? id) 
+        #region Create Borrower
+        public async Task<IActionResult> CreateBorrower() 
         {
-            #region Variable Declaration 
             var model = new CreateOrEditBorrowerListViewModel();
 
-            var getAllBook = await _bookAppService.GetAllAsync(new PagedBookResultRequestDto { MaxResultCount = int.MaxValue });
-            var getAllStudent = await _studentAppService.GetAllAsync(new PagedStudentResultRequestDto { MaxResultCount = int.MaxValue });
-            #endregion
+            var modelStudent = await _studentAppService.GetAllAsync(new PagedStudentResultRequestDto { MaxResultCount = int.MaxValue }); 
+            var modelBook = await _bookAppService.GetAllAsync(new PagedBookResultRequestDto { MaxResultCount = int.MaxValue });
 
-            //if (id.HasValue)
-            //{
-            //    var createBorrower = await _borrowerAppService.GetAsync(new EntityDto<int>(id.Value));
-            //    model = new CreateOrEditBorrowerListViewModel()
-            //    {
-            //        Id = createBorrower.Id,
-            //        StudentId = createBorrower.Id,            
-            //        BookId = createBorrower.Id,               
-            //        BorrowDate = createBorrower.BorrowDate,                   
-            //        ExpectedReturnDate = createBorrower.ExpectedReturnDate,   
-            //        ReturnDate = createBorrower.ReturnDate,    
-            //        IsBorrowed = (bool)createBorrower.Books.IsBorrowed
-                    
-
-            //    };
-            //}
-
-            model.StudentList = getAllStudent.Items.ToList();
-            model.BookList = getAllBook.Items.ToList();
+            model.StudentList = modelStudent.Items.ToList(); 
+            model.BookList = modelBook.Items.ToList();   
 
             return View(model);
 
+        }
+        #endregion
+
+        #region Edit/Update Borrower
+        public async Task<IActionResult> UpdateBorrower(int? Id)
+        {
+
+            var model = new CreateOrEditBorrowerListViewModel();
+            var modelBook = await _bookAppService.GetAllBooks();
+            var getStudent = await _studentAppService.GetAllStudents();
+
+            if (Id.HasValue)
+            {
+                var borrower = await _borrowerAppService.GetAsync(new EntityDto<int>(Id.Value));
+                model = new CreateOrEditBorrowerListViewModel()
+                {
+                    Id = borrower.Id,
+                    StudentId = borrower.Id,
+                    BookId = borrower.Id,
+                    BorrowDate = borrower.BorrowDate,
+                    ExpectedReturnDate = borrower.ExpectedReturnDate,
+                    ReturnDate = borrower.ReturnDate,
+                    //do it latwer isborrowed
+
+                };
+            }
+
+            model.StudentList = getStudent.ToList();
+            model.BookList = modelBook.ToList();
+
+            return View(model);
         }
         #endregion
 

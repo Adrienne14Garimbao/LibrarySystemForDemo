@@ -85,18 +85,18 @@
                                             <td>@borrower.Student?.StudentName</td>
                                             <td>@borrower?.Books?.BookTitle</td>
 
-                                            <td>@borrower?.BorrowDate</td>
-                                            <td>@borrower?.ExpectedReturnDate</td>
-                                            <td>@borrower?.ReturnDate</td>
+                                            <td>@borrower?.BorrowDate.ToString("MM/dd/yyyy")</td>
+                                            <td>@borrower?.ExpectedReturnDate.ToString("MM/dd/yyyy")</td>
+                                            <td>@borrower.ReturnDate?.ToString("MM/dd/yyyy")</td>
 
 
                                             <td>
 
-                                                <button type="button" class="btn btn-sn bg-secondary update-borrower" data-borrower-id="@borrower.Id" data-borrower-return-date="@borrower.ReturnDate" >
+                                                <button type="button" class="btn btn-sn bg-secondary update-borrower" data-borrower-id="@borrower.Id" data-date-of-return="@borrower.ReturnDate">
                                                     <i class="fas fa-pencil-alt"></i> Update
                                                 </button>
 
-                                                <button type="button" class="btn btn-sn btn-danger delete-borrower" data-borrower-id="@borrower.Id" data-borrower-name="@borrower.Student">
+                                                <button type="button" class="btn btn-sn btn-danger delete-borrower" data-borrower-id="@borrower.Id" data-borrower-name="@borrower.Student?.StudentName" data-borrower-book-id="@borrower?.BookId">
                                                     <i class="fas fa-trash"></i> Delete 
                                                 </button>
 

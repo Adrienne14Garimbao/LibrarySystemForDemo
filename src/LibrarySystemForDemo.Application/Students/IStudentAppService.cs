@@ -13,5 +13,7 @@ namespace LibrarySystemForDemo.Students
     {
         Task<PagedResultDto<StudentDto>> GetAllStudentWithDepartment(PagedStudentResultRequestDto input);
 
+        Task<List<StudentDto>> GetAllStudents();
+
     }
 }

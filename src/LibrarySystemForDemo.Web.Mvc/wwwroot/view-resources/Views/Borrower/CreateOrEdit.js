@@ -8,30 +8,26 @@
 
     var _borrowerPage = "/Borrower";
 
-    var _BorrowDate = new Date(),
-        _ExpectedReturnDate = new Date();
-
-    _ExpectedReturnDate.setDate(_ExpectedReturnDate.getDate(_BorrowDate) + 7); 
-
-    document.getElementById('BorrowDate').value = _BorrowDate.toISOString().split("T")[0]// ISO format to split date (y/m/d)
-    document.getElementById('ExpectedReturnDate').value = _ExpectedReturnDate.toISOString().split("T")[0]
-
-
-
-
-    // #region Save Button 
-    
-    _$form.find('.save-button').on('click', (e) => {
-        save();
-    })
-    // #endregion
-
     // #region Cancel Button
 
     _$form.find('.cancel-button').on('click', (e) => {
         cancelAndReturn();
     })
     // #endregion
+
+    // #region Get Current Date and Add 7 Days
+
+    var BorrowDate = new Date(),
+        ExpectedReturnDate = new Date();
+
+    ExpectedReturnDate.setDate(ExpectedReturnDate.getDate(BorrowDate) + 7); 
+
+    document.getElementById('BorrowDate').value = BorrowDate.toISOString().split("T")[0]// ISO format to split date (y/m/d)
+    document.getElementById('ExpectedReturnDate').value = ExpectedReturnDate.toISOString().split("T")[0]
+
+
+    // #endregion
+
 
     // #region save() - Create Borrower
     function save() {
@@ -52,7 +48,6 @@
         abp.ui.setBusy(_$form);
         // #endregion
 
-        // #region Condition
         if (borrower.Id != 0) 
         {
             // #region Update
@@ -62,17 +57,15 @@
             });
             //#endregion
         }
-        else 
-        {
-            // #region Create   
+        else /* Create */
+        {  
             _borrowerAppService.create(borrower).done(function () {
+                //borrower.ReturnDate = null;
                 redirectToBorrowerIndex();
                 abp.message.success('Successfully Saved!', 'Saved');
 
             });
-            // #endregion
         }
-        // #endregion
 
     }
     // #endregion
@@ -95,10 +88,11 @@
     }
     // #endregion
 
-    
-
+    // #region Save Button 
+    _$form.find('.save-button').on('click', (e) => {
+        save();
+    })
+    // #endregion
 
 })(jQuery);
-
-
 // #endregion

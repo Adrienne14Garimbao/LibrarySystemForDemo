@@ -11,5 +11,7 @@ namespace LibrarySystemForDemo.Books
     public interface IBookAppService : IAsyncCrudAppService<BookDto, int, PagedBookResultRequestDto, CreateBookDto, BookDto>
     {
         Task<PagedResultDto<BookDto>> GetAllBookWithCategory(PagedBookResultRequestDto input);
+
+        Task<List<BookDto>> GetAllBooks();
     }
 }

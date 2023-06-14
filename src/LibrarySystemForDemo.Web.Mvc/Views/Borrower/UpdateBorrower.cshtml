@@ -11,7 +11,7 @@
 @section scripts
     {
     <environment names="Development">
-        <script src="~/view-resources/Views/Borrower/CreateOrEdit.js" asp-append-version="true"></script>
+        <script src="~/view-resources/Views/Borrower/Update.js" asp-append-version="true"></script>
     </environment>
 
 }
@@ -33,17 +33,15 @@
 
                         <form name="BorrowerForm" role="form" class="form-horizontal">
 
-                            <input type="hidden" name="Id" value="@Model?.Id" />
-
-                            <input class="form-control" hidden type="datetime-local" data-date-of-borrow="@Model?.BorrowDate" required id="BorrowDate" name="BorrowDate" value="@Model?.BorrowDate" />
-                            <input class="form-control" hidden type="datetime-local" data-expected-date-of-return="@Model?.ExpectedReturnDate" required id="ExpectedReturnDate" name="ExpectedReturnDate" value="@Model?.ExpectedReturnDate" />
 
                             <div class="row">
 
                                 <div class="form-group">
 
                                     <label for="ReturnDate">Date of Return</label>
-                                    <input class="form-control" type="date" data-date-of-return="@Model?.ReturnDate" data-val ="true" id="ReturnDate" name="ReturnDate" value="@Model?.ReturnDate">
+                                    <input class="form-control" type="date" data-date-of-return="@Model?.ReturnDate" id="ReturnDate" name="ReturnDate" value="@Model?.ReturnDate">                                 
+
+                                    <input type="hidden" name="Id" value="@Model?.Id" />
 
                                 </div>
 

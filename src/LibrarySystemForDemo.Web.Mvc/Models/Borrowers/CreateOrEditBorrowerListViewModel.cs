@@ -16,17 +16,11 @@ namespace LibrarySystemForDemo.Web.Models.Borrowers
 
         public DateTime? ReturnDate { get; set; } /* <<<< I convert it into nullable */
 
-        public bool IsBorrowed { get; set; }
-
         public int BookId { get; set; }
 
-        public Book Books { get; set; }
+        public List<BookDto> BookList { get; set; }
 
         public int StudentId { get; set; }
-
-        public Student Student { get; set; }
-
-        public List<BookDto> BookList { get; set; }
 
         public List<StudentDto> StudentList { get; set; }
 

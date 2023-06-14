@@ -1,6 +1,7 @@
 ﻿using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using Abp.Domain.Repositories;
+using LibrarySystemForDemo.Books;
 using LibrarySystemForDemo.Books.Dto;
 using LibrarySystemForDemo.Borrowers.Dto;
 using LibrarySystemForDemo.Entities;
@@ -17,19 +18,22 @@ namespace LibrarySystemForDemo.Borrowers
     {
         #region IRepository
         private readonly IRepository<Borrower, int> _repository;
+        //private readonly IRepository<Book, int> _bookRepository;
+        //private readonly IRepository<Student, int> _studentRepository;
 
-        private readonly IRepository<Book, int> _bookRepository;
-        private readonly IRepository<Student, int> _studentRepository;
+        //public readonly IBookAppService _bookIAppService;
+
         #endregion
 
-        public BorrowerAppService(IRepository<Borrower, int> repository, IRepository<Book> bookRepository, IRepository<Student> studentRepository) : base(repository)
+        public BorrowerAppService(IRepository<Borrower, int> repository) : base(repository)
         {
             _repository = repository;
-            _bookRepository = bookRepository;
-            _studentRepository = studentRepository;
+            //_bookRepository = bookRepository;
+            //_studentRepository = studentRepository;
+            //_bookIAppService = bookAppService;
         }
 
-        #region Generated Override
+        #region Default CRUD Override
         public override Task<BorrowerDto> CreateAsync(CreateBorrowerDto input)
         {
             return base.CreateAsync(input);
@@ -74,6 +78,30 @@ namespace LibrarySystemForDemo.Borrowers
 
         }
         #endregion
+
+        //public async Task<List<BorrowerDto>> GetAllBorrower()
+        //{
+        //    var returnquery = await _repository.GetAll().Select(x => ObjectMapper.Map<BorrowerDto>(x)).ToListAsync(); //only for the borrowers 
+
+        //    return returnquery;
+        //}
+
+        //public async Task<BookDto> GetAllBookBorrowed(EntityDto<int> input) //create another new method to get the book isborrowed 
+        //{
+        //    var isBorrowed = await _bookIAppService.GetAsync(input);
+
+        //    if (isBorrowed.IsBorrowed == true)
+        //    {
+        //        isBorrowed.IsBorrowed = false;
+        //    }
+        //    else
+        //    {
+        //        isBorrowed.IsBorrowed = true;
+        //    }
+        //    var book2 = await _bookIAppService.UpdateAsync(isBorrowed);
+
+        //    return book2;
+        //}
 
 
     }

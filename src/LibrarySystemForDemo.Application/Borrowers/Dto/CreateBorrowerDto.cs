@@ -1,6 +1,8 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
+using LibrarySystemForDemo.Books.Dto;
 using LibrarySystemForDemo.Entities;
+using LibrarySystemForDemo.Students.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +12,6 @@ using System.Threading.Tasks;
 namespace LibrarySystemForDemo.Borrowers.Dto
 {
     #region Mapping
-    [AutoMapFrom(typeof(Borrower))]
     [AutoMapTo(typeof(Borrower))]
     #endregion
 
@@ -24,10 +25,8 @@ namespace LibrarySystemForDemo.Borrowers.Dto
 
         public int? BookId { get; set; }
 
-        public Book Books { get; set; }
-
         public int? StudentId { get; set; }
 
-        public Student Student { get; set; }
+        
     }
 }

@@ -17,12 +17,12 @@
 
 }
 
-@{
+@*@{
     var today = DateTime.Now;
 
     ViewBag.Title = "Borrower";
 
-}
+}*@
 
 <section class="content">
     <div class="container-fluid">
@@ -32,45 +32,45 @@
 
                     <div class="card-body">
 
-                        <form name="BorrowerForm" role="form" class="form-horizontal" method="get">
-
-                            <!--  Hidden Element -->
-                            <input type="hidden" name="Id" value="@Model?.Id" />
-                            <input type="hidden" name="IsBorrowed" value="true" id="CreateIsBorrowed" checked />
-                            <!--  Hidden Element -->
+                        <form name="BorrowerForm" id="CreateBorrower" role="form" class="form-horizontal" method="get">
 
                             <div class="row">
 
                                 <div class="form-group">
 
+                                    <label for="BorrowDate">Date of Borrow </label>
+                                    <input class="form-control" value="@Model?.BorrowDate" required id="BorrowDate" type="date" data-date-of-borrow="@Model?.BorrowDate" name="BorrowDate" />
+
+                                    <label for="ExpectedReturnDate">Expected Date of Return </label>
+                                    <input class="form-control" value="@Model?.ExpectedReturnDate" required id="ExpectedReturnDate" type="date" data-expected-date-of-return="@Model?.ExpectedReturnDate" name="ExpectedReturnDate" />
+
+
                                     <label for="studentList">Student List</label>
                                     @Html.DropDownListFor(
-                                    x => x.Student,
+                                    model => model.StudentId,
                                     Model.StudentList.Select(
-                                    d => new SelectListItem {
-                                    Value = d.Id.ToString(),
-                                    Text = d.StudentName
+                                    student => new SelectListItem {
+                                    Value = student.Id.ToString(),
+                                    Text = student.StudentName
                                     }), "Select Student", new {@class = "form-control"})
 
 
                                     <label for="bookList">Book List</label>
                                     @Html.DropDownListFor(
-                                    x => x.Books,
+                                    model => model.BookId,
                                     Model.BookList.Select(
-                                    d => new SelectListItem {
-                                    Value = d.Id.ToString(),
-                                    Text = d.BookTitle
+                                    book => new SelectListItem {
+                                    Value = book.Id.ToString(),
+                                    Text = book.BookTitle
                                     }), "Select Book", new {@class = "form-control"})
 
-                                    <label for="BorrowDate">Date of Borrow </label>          
-                                    <input class="form-control" required id="BorrowDate" type="date" data-date-of-borrow="@Model?.BorrowDate" name="BorrowDate" value="@Model?.BorrowDate" />
+                                   
+                                         
                                     
-                                    <label for="ExpectedReturnDate">Expected Date of Return </label> 
-                                    <input class="form-control" required id="ExpectedReturnDate" type="date" data-expected-date-of-return="@Model?.ExpectedReturnDate" name="ExpectedReturnDate" value="@Model?.ExpectedReturnDate" />
-
-                                    <label for="ReturnDate" hidden>Date of Return </label>   
-                                    <input class="form-control" hidden type="date" data-date-of-return="@Model?.ReturnDate" data-val="true" id="ReturnDate" name="ReturnDate" value="@Model?.ReturnDate">
-                                                                                                                
+                                    <!--  Hidden Element -->
+                                    <input type="hidden" name="Id" value="@Model?.Id" />
+                                    @*<input type="hidden" name="IsBorrowed" value="true" id="CreateIsBorrowed" checked />*@
+                                    <!--  Hidden Element -->
 
                                 </div>
 
